@@ -133,10 +133,27 @@
     .featurette-divider {
       margin: 50px 0; /* Space out the Bootstrap <hr> more */
     }
+
+    .header-total-padding {
+      padding-top: 40px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+
+    .header-title-padding {
+      padding-top: 0px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+
     .featurette {
       padding-top: 90px; /* Vertically center images part 1: add padding above and below text. */
       overflow: hidden; /* Vertically center images part 2: clear their floats. */
     }
+
+    .main-article {
+      padding-top: 5px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+
     .featurette-image {
       margin-top: -90px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
     }
@@ -185,6 +202,11 @@
         height: auto;
         padding: 0;
       }
+
+      .main-article {
+        padding-top: 5px;
+      }
+
       .featurette-image.pull-left,
       .featurette-image.pull-right {
         display: block;
