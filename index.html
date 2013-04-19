@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
+    <html itemscope itemtype="http://schema.org/Event">
 
     <!-- Le styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -88,21 +89,21 @@
       <div class="row">
         <div class="span4">
           <img class="img-circle" data-src="holder.js/140x140">
-          <h2>Heading</h2>
+          <h2>About JBH</h2>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <p><a class="btn" href="about.html">View JBH History &raquo;</a></p>
         </div><!-- /.span4 -->
         <div class="span4">
           <img class="img-circle" data-src="holder.js/140x140">
-          <h2>Heading</h2>
+          <h2>Teams</h2>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <p><a class="btn" href="teams.html">View Teams &raquo;</a></p>
         </div><!-- /.span4 -->
         <div class="span4">
           <img class="img-circle" data-src="holder.js/140x140">
-          <h2>Heading</h2>
+          <h2>Fixtures</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <p><a class="btn" href="fixtures.html">View Fixtures &raquo;</a></p>
         </div><!-- /.span4 -->
       </div><!-- /.row -->
 
@@ -142,12 +143,12 @@
       <footer>
       <div class="footer_padding">
         <div class="fb-like" data-href="http://matloughnane.github.io/jbh_website/index.html" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
-        <a href="https://twitter.com/share" class="twitter-share-button" data-text="Check out the latest from Arranmore #JBH13" data-via="JBH_Live">Tweet</a>
         <div class="g-plusone" data-size="medium" data-annotation="inline" data-width="300"></div>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-text="Check out the latest from Arranmore #JBH13" data-via="JBH_Live">Tweet</a>
       </div>
       <div class="footer_padding">
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2013 JBH, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p>&copy; 2013 JBH &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
        </div>
       </footer>
 
@@ -194,7 +195,10 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
       })();
     </script>
-
+    <!-- Add the following three tags to your body. -->
+    <span itemprop="name">JBH</span>
+    <span itemprop="description">Catch all the latest action from the JBH weekend! #JBH13</span>
+    <img itemprop="image" src="https://github.com/matloughnane/jbh_website/blob/gh-pages/assets/ico/apple-touch-icon-114-precomposed.png?raw=true">
 
   </body>
 </html>
