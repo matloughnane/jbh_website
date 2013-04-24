@@ -1,0 +1,38 @@
+Team List
+
+Alva All Stars 
+Arranmore 
+Balaly 
+Barhale 
+Clannad 
+Damos Dream
+Gallaghers
+Glasgow Gaels 
+Internazionale
+Palatico
+Real lypis 
+Rebels 
+Stonecutters 
+The Woodcarvers
+Tory 
+Warriors
+
+Team	Shirt - Primary	Shirt - Secondary
+		
+Alva All Stars 	Uknown	
+Arranmore 	Orange	Black x
+Balaly 	Blue - Horizontal White	x
+Barhale 	Blue	Black x
+Clannad 	Green - white stripes	White x
+Damos Dream	White	Red x
+Gallaghers	Blue	White x
+Glasgow Gaels 	Red with One White stripe x 	
+Internazionale	Mlue and Black Vertical	x
+Palatico 	Blue / Dark Blue	White x
+Real lypis 	Black / White Vertical Stripes	White x 
+Rebels 	Dark Blue	White x
+Stonecutters 	Black - Green Arms	Green x
+The Woodcarvers	Green	x
+Tory 	Green	
+Warriors 	Black	Black x
+ 
