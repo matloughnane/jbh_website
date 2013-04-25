@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Update your html tag to include the itemscope and itemtype attributes. -->
+<html lang="en" itemscope itemtype="http://schema.org/Event">
   <head>
     <meta charset="utf-8">
     <title>Arran JBH</title>
@@ -24,10 +25,14 @@
       <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
                     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
                                    <link rel="shortcut icon" href="assets/ico/favicon.png">
+      <!-- Add the following three tags inside head. -->
+      <meta itemprop="name" content="Arranmore JBH">
+      <meta itemprop="description" content="Keep up to date with all the action from this years Arranmore JBH. #jbh13">
+      <meta itemprop="image" content="http://matloughnane.github.io/jbh_website/assets/ico/apple-touch-icon-144-precomposed.png">
   </head>
 
   <body>
-
+    <a name="top"></a>
     <!-- NAVBAR
     ================================================== -->
    <div class="navbar-wrapper">
@@ -109,7 +114,6 @@
         </div><!-- /.span4 -->
       </div><!-- /.row -->
 
-
       <!-- START THE FEATURETTES -->
 
       <!-- <hr class="featurette-divider">
@@ -144,13 +148,13 @@
       <!-- FOOTER -->
       <footer>
       <div class="footer_padding">
-        <a href="https://twitter.com/share" class="twitter-share-button" data-text="Check out the latest from Arranmore #JBH13" data-via="JBH_Live">Tweet</a>
-        <div class="g-plusone" data-size="medium" data-annotation="inline" data-width="300"></div>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-text="Check out the latest from Arranmore #JBH13" data-via="JBH_Live">Tweet</a> <br>
+        <div class="g-plusone" data-size="medium" data-annotation="inline" data-width="300"></div><br>
         <div class="fb-like" data-href="http://matloughnane.github.io/jbh_website/index.html" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
       </div>
       <div class="footer_padding">
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2013 JBH &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p class="pull-right"><a href="#top">Back to top</a></p>
+        <p>&copy; 2013 JBH &middot; <a data-toggle="modal" href="#thankyoumodal">Thank Yous</a></p>
        </div>
       </footer>
 
@@ -174,7 +178,14 @@
     <script src="assets/js/bootstrap-collapse.js"></script>
     <script src="assets/js/bootstrap-typeahead.js"></script>
     <script src="assets/js/holder/holder.js"></script>
-
+    <script type="text/javascript">
+      $('a').click(function(){
+          $('html, body').animate({
+              scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+          }, 500);
+          return false;
+      });
+    </script>
     <!-- Lets be social! -->
     <!-- Facebook -->
     <div id="fb-root"></div>
@@ -197,6 +208,27 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
       })();
     </script>
-    <!-- Add the following three tags to your body. -->
+
+<!-- MODAL -->
+    <div id="thankyoumodal" class="modal hide fade in" style="display: none; ">  
+    <div class="modal-header">  
+    <a class="close" data-dismiss="modal">×</a>  
+    <h3>A Few People To Thank</h3>  
+    </div>  
+    <div class="modal-body">    
+    <p>This site was built with the help of:
+      <ul class="nav nav-list">
+        <li><i class="icon-user icon-black"></i> Person 1</li>
+        <li><i class="icon-user icon-black"></i> Person 2</li>
+        <li><i class="icon-user icon-black"></i> Person 3</li>
+        <li><i class="icon-user icon-black"></i> Person 4</li>
+      </ul>
+    </p>                
+    </div>  
+    <div class="modal-footer">  
+    <a href="#" class="btn btn-danger" data-dismiss="modal">Close</a>  
+    </div>  
+    </div>
+
   </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Arran JBH</title>
+    <title>JBH Live</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -26,7 +26,7 @@
   </head>
 
   <body>
-
+    <a name="top"></a>
     <!-- NAVBAR
     ================================================== -->
     <div class="navbar-wrapper">
@@ -118,7 +118,7 @@
       <!-- FOOTER -->
       <footer>
         <div class="footer_padding">
-        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p class="pull-right"><a href="#top">Back to top</a></p>
         <p>&copy; 2013 JBH &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
        </div>
       </footer>
@@ -143,13 +143,13 @@
     <script src="assets/js/bootstrap-collapse.js"></script>
     <script src="assets/js/bootstrap-carousel.js"></script>
     <script src="assets/js/bootstrap-typeahead.js"></script>
-    <script>
-      !function ($) {
-        $(function(){
-          // carousel demo
-          $('#myCarousel').carousel()
-        })
-      }(window.jQuery)
+    <script type="text/javascript">
+      $('a').click(function(){
+          $('html, body').animate({
+              scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+          }, 500);
+          return false;
+      });
     </script>
     <script src="assets/js/holder/holder.js"></script>
   </body>
