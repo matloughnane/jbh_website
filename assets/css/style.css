@@ -149,6 +149,11 @@
       overflow: hidden; /* Vertically center images part 2: clear their floats. */
     }
 
+    .featurette_about {
+      padding-top: 30px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+
     .main-article {
       padding-top: 5px; /* Vertically center images part 1: add padding above and below text. */
       overflow: hidden; /* Vertically center images part 2: clear their floats. */
@@ -258,6 +263,10 @@
       }
       .featurette .lead {
         font-size: 18px;
+        line-height: 1.5;
+      }
+      .featurette .lead2 {
+        font-size: 20px;
         line-height: 1.5;
       }
 
