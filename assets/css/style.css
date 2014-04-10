@@ -278,6 +278,10 @@
 	width: auto;
 }
 
+.middle {
+  text-align: center;
+}
+
 .teamphoto {
 	position: relative;
 	width: 500px;
