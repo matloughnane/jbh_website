@@ -1,0 +1,73 @@
+
+body {
+	background-color: #ecf0f1;
+	font-family: 'Maven Pro', sans-serif;
+/*	margin: 10px 0;*/
+}
+
+img.logo {
+    max-width: 20%;
+}
+
+@media screen and (max-width: 640px) {
+	img.logo {
+    	max-width: 40%;
+	}
+}
+
+.middle {
+	margin: 0 auto;
+	width: 100%;
+}
+
+.title_div {
+	margin-top: 50px;
+	font-size: 3em;	
+}
+
+.subtitle {
+	font-size: 1em;
+}
+
+/*BUTTONS TEMP:*/
+
+a {
+	font-size: 0.75em;
+	text-decoration: none;
+}
+/* line 1, sass/partials/_buttons.scss */
+.btn {
+  border: none;
+  background: none;
+  padding: 10px 10px;
+  display: inline-block;
+  margin: 8px 5px;
+  text-transform: lowercase;
+  text-decoration: none;
+  outline: none;
+  position: relative;
+  border-radius: 0px;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.dark_highlight {
+  color: #dadfe1;
+  background-color: #26a65b;
+}
+/* line 37, sass/partials/_buttons.scss */
+.dark_highlight a {
+  color: #f2f1ef;
+}
+/* line 40, sass/partials/_buttons.scss */
+.dark_highlight:hover {
+  box-shadow: 0px -3px 0px 0px #104428 inset;
+  outline: 0 6px #104428;
+  background-color: #26a65b;
+}
+/* line 45, sass/partials/_buttons.scss */
+.dark_highlight:active {
+  background-color: #104428;
+  top: 0px;
+}

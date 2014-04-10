@@ -1,0 +1,9 @@
+Simple API Access
+Use API keys to identify your project when you do not need to access user data. Learn more
+Key for browser apps (with referers)
+API key:	
+AIzaSyBYM0ZIFyKzrI3LNBXLV8ULd5c8onZbwvY
+Referers:	
+Any referer allowed
+Activated on:	Aug 12, 2013 1:00 PM
+Activated by:	 mat.loughnane@gmail.com – you
