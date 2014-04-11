@@ -638,10 +638,4 @@ TABLE.CSVTable TR.odd {
 }
 
 /* Hover color for all rows */
-/* line 34, sass/partials/_tables.scss */
-TABLE.CSVTable TR:hover {
-  color: #f2f1ef;
-  background: #104428;
-}
-
 /* Source code */
