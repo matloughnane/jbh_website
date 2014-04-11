@@ -20,7 +20,8 @@
     <!-- TABLE SCRIPT -->
       <script>
         $(function() {
-          $('#groups_table').CSVToTable('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dGExeTR4RUZpU2Z2YzMyVDBDUXBKZmc&output=csv', { loadingImage: 'assets/img/loading.gif', startLine: 0 });
+          $('#groups_table').CSVToTable('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dG01c2dxN0NxUmJ3N0dFQ245aE4tM2c&output=csv', { loadingImage: 'assets/img/loading.gif', startLine: 0 });
+          $('#groups_stages_table').CSVToTable('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dGExeTR4RUZpU2Z2YzMyVDBDUXBKZmc&output=csv', { loadingImage: 'assets/img/loading.gif', startLine: 0 });
           $('#quarters_table').CSVToTable('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dDE1R1FLTVJTeE51b000SEk3d2xpWHc&output=csv', { loadingImage: 'assets/img/loading.gif', startLine: 0 });
           $('#semis_table').CSVToTable('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dFl6NjJWbmhtWGFYUjEyN2V5VWZYQ1E&output=csv', { loadingImage: 'assets/img/loading.gif', startLine: 0 });
           $('#finals_table').CSVToTable('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dERBRjVmOXlwcnNuVzVjbHlBU3c0OFE&output=csv', { loadingImage: 'assets/img/loading.gif', startLine: 0 });
@@ -88,9 +89,12 @@
       <a href="#final">The Final</a> <br>
     </div>
     <div class="unit four-fifths content">
-      <p>Here's all the results from the games:</p>
-      <p>NB: Post the fixtures after the live draw. Work out how to do the groups.</p>
+      <p>Here's the groups for the weekend:</p>
       <div id="groups_table">
+      </div>
+      <br><br>
+      <p>Here's all the results from the games:</p>
+      <div id="groups_stages_table">
       </div>
       <br><br>
       <a id="quarters"></a>
