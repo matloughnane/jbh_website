@@ -314,9 +314,12 @@ img.banner {
   }
 }
 /*
+==================IMAGE CAPTIONS====================
+*/
+/*
 ==================DESKTOP NAVIGATION====================
 */
-/* line 251, sass/partials/_base.scss */
+/* line 257, sass/partials/_base.scss */
 .nav {
   background-color: #104428;
   list-style: none;
@@ -324,26 +327,26 @@ img.banner {
   padding: 0px;
   text-align: center;
 }
-/* line 257, sass/partials/_base.scss */
+/* line 263, sass/partials/_base.scss */
 .nav ul {
   padding: 0px;
   margin: 0px;
 }
-/* line 261, sass/partials/_base.scss */
+/* line 267, sass/partials/_base.scss */
 .nav li {
   display: inline;
   padding: 10px;
   margin: 0px;
 }
-/* line 265, sass/partials/_base.scss */
+/* line 271, sass/partials/_base.scss */
 .nav li:hover {
   box-shadow: 0px -5px 0px 0px #26a65b inset;
 }
-/* line 268, sass/partials/_base.scss */
+/* line 274, sass/partials/_base.scss */
 .nav li:active {
   background-color: #1e824c;
 }
-/* line 272, sass/partials/_base.scss */
+/* line 278, sass/partials/_base.scss */
 .nav a {
   font-size: 1em;
   color: #f2f1ef;
@@ -357,13 +360,13 @@ img.banner {
 /*
 ==================HIDDEN NAVIGATION====================
 */
-/* line 287, sass/partials/_base.scss */
+/* line 293, sass/partials/_base.scss */
 .wrapper {
   position: relative;
   margin: 0 auto;
 }
 
-/* line 292, sass/partials/_base.scss */
+/* line 298, sass/partials/_base.scss */
 .menu-link {
   color: #f2f1ef;
   position: absolute;
@@ -371,47 +374,47 @@ img.banner {
   padding: 0 0.5em;
   background-color: #104428;
 }
-/* line 298, sass/partials/_base.scss */
+/* line 304, sass/partials/_base.scss */
 .menu-link:hover {
   background-color: #26a65b;
 }
-/* line 301, sass/partials/_base.scss */
+/* line 307, sass/partials/_base.scss */
 .menu-link:active {
   background-color: #1e824c;
 }
 
-/* line 306, sass/partials/_base.scss */
+/* line 312, sass/partials/_base.scss */
 .subtitle {
   text-align: center;
   font-size: 1.125em;
   margin: .5em 0;
 }
 
-/* line 312, sass/partials/_base.scss */
+/* line 318, sass/partials/_base.scss */
 .btn-list {
   margin: 3em 0;
   text-align: center;
 }
-/* line 315, sass/partials/_base.scss */
+/* line 321, sass/partials/_base.scss */
 .btn-list li {
   display: inline-block;
 }
-/* line 317, sass/partials/_base.scss */
+/* line 323, sass/partials/_base.scss */
 .btn-list li:first-of-type {
   margin-right: 1em;
 }
 
-/* line 323, sass/partials/_base.scss */
+/* line 329, sass/partials/_base.scss */
 .btn {
   padding: 1em .5em;
   text-align: center;
   border-radius: 6px;
 }
-/* line 327, sass/partials/_base.scss */
+/* line 333, sass/partials/_base.scss */
 .btn:hover {
   background: #16a085;
 }
-/* line 330, sass/partials/_base.scss */
+/* line 336, sass/partials/_base.scss */
 .btn:active {
   background: #16a085;
 }
@@ -419,7 +422,7 @@ img.banner {
 /*
 ==================HIDDEN NAVIGATION PANEL====================
 */
-/* line 339, sass/partials/_base.scss */
+/* line 345, sass/partials/_base.scss */
 .panel {
   text-transform: uppercase;
   background: #1e824c;
@@ -430,32 +433,32 @@ img.banner {
   width: 15.625em;
   /*should match the above value*/
 }
-/* line 346, sass/partials/_base.scss */
+/* line 352, sass/partials/_base.scss */
 .panel ul {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
 }
-/* line 350, sass/partials/_base.scss */
+/* line 356, sass/partials/_base.scss */
 .panel ul li {
   padding: 1em;
   box-shadow: 0px -1px 0px 0px #26a65b inset;
 }
-/* line 353, sass/partials/_base.scss */
+/* line 359, sass/partials/_base.scss */
 .panel ul li:hover {
   background-color: #26a65b;
 }
-/* line 357, sass/partials/_base.scss */
+/* line 363, sass/partials/_base.scss */
 .panel ul a {
   color: #dadfe1;
   padding: 1em;
 }
-/* line 360, sass/partials/_base.scss */
+/* line 366, sass/partials/_base.scss */
 .panel ul a.nav_link {
   font-size: 1em;
 }
 
-/* line 367, sass/partials/_base.scss */
+/* line 373, sass/partials/_base.scss */
 .nav-icon {
   margin-right: 6px;
 }
