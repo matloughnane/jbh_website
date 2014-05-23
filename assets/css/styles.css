@@ -182,9 +182,13 @@ a {
 }
 /* line 151, sass/partials/_base.scss */
 #thankyou h2 {
-  margin-right: 100px;
+  font-size: 1em;
 }
 /* line 154, sass/partials/_base.scss */
+#thankyou h3 {
+  font-size: 1em;
+}
+/* line 157, sass/partials/_base.scss */
 #thankyou a {
   background-color: #bde4cd;
   padding: 2px;
@@ -194,22 +198,22 @@ a {
 /*
 ==================IMAGES NAVIGATION====================
 */
-/* line 166, sass/partials/_base.scss */
+/* line 169, sass/partials/_base.scss */
 img.logo {
   max-width: 20%;
 }
 
-/* line 170, sass/partials/_base.scss */
+/* line 173, sass/partials/_base.scss */
 img.main {
   max-width: 100%;
 }
 
-/* line 174, sass/partials/_base.scss */
+/* line 177, sass/partials/_base.scss */
 img.ri {
   max-width: 50%;
 }
 
-/* line 178, sass/partials/_base.scss */
+/* line 181, sass/partials/_base.scss */
 img.banner {
   max-width: 100%;
 }
@@ -218,7 +222,7 @@ img.banner {
 ==================TABLET BASICS====================
 */
 @media screen and (max-width: 968px) {
-  /* line 187, sass/partials/_base.scss */
+  /* line 190, sass/partials/_base.scss */
   h1 {
     color: #dadfe1;
     font-size: 2em;
@@ -226,52 +230,52 @@ img.banner {
     margin: 0px;
   }
 
-  /* line 193, sass/partials/_base.scss */
+  /* line 196, sass/partials/_base.scss */
   h2 {
     font-size: 1.5em;
   }
 
-  /* line 196, sass/partials/_base.scss */
+  /* line 199, sass/partials/_base.scss */
   h3 {
     font-size: 1em;
   }
 
-  /* line 199, sass/partials/_base.scss */
+  /* line 202, sass/partials/_base.scss */
   .nav li a {
     font-size: 0.75em;
   }
 
-  /* line 202, sass/partials/_base.scss */
+  /* line 205, sass/partials/_base.scss */
   p {
     font-size: 1em;
   }
 
-  /* line 205, sass/partials/_base.scss */
+  /* line 208, sass/partials/_base.scss */
   .italics {
     font-size: 0.9em;
   }
 
-  /* line 208, sass/partials/_base.scss */
+  /* line 211, sass/partials/_base.scss */
   a {
     padding: 10px 20px;
   }
 
-  /* line 211, sass/partials/_base.scss */
+  /* line 214, sass/partials/_base.scss */
   .fixed_280 {
     height: auto;
   }
 
-  /* line 215, sass/partials/_base.scss */
+  /* line 218, sass/partials/_base.scss */
   .anchor_box a {
     font-size: 0.7em;
     line-height: 150%;
   }
-  /* line 218, sass/partials/_base.scss */
+  /* line 221, sass/partials/_base.scss */
   .anchor_box a:hover {
     text-decoration: underline;
   }
 
-  /* line 223, sass/partials/_base.scss */
+  /* line 226, sass/partials/_base.scss */
   .wrapper {
     position: relative;
     margin: 0 auto;
@@ -282,7 +286,7 @@ img.banner {
 ==================MOBILE BASICS====================
 */
 @media screen and (max-width: 640px) {
-  /* line 235, sass/partials/_base.scss */
+  /* line 238, sass/partials/_base.scss */
   h1 {
     color: #dadfe1;
     font-size: 2em;
@@ -290,61 +294,61 @@ img.banner {
     margin: 0px;
   }
 
-  /* line 241, sass/partials/_base.scss */
+  /* line 244, sass/partials/_base.scss */
   p {
     font-size: 1.0em;
   }
 
-  /* line 244, sass/partials/_base.scss */
+  /* line 247, sass/partials/_base.scss */
   .content {
     height: auto;
   }
-  /* line 246, sass/partials/_base.scss */
+  /* line 249, sass/partials/_base.scss */
   .content p {
     font-size: 1em;
   }
 
-  /* line 250, sass/partials/_base.scss */
+  /* line 253, sass/partials/_base.scss */
   .italics {
     font-size: 1em;
   }
 
-  /* line 253, sass/partials/_base.scss */
+  /* line 256, sass/partials/_base.scss */
   .content_secondary {
     height: auto;
   }
 
-  /* line 256, sass/partials/_base.scss */
+  /* line 259, sass/partials/_base.scss */
   .content_tertiary {
     height: auto;
   }
 
-  /* line 259, sass/partials/_base.scss */
+  /* line 262, sass/partials/_base.scss */
   .fixed_280 {
     height: auto;
   }
 
-  /* line 262, sass/partials/_base.scss */
+  /* line 265, sass/partials/_base.scss */
   .fixed_240 {
     height: auto;
   }
 
-  /* line 266, sass/partials/_base.scss */
+  /* line 269, sass/partials/_base.scss */
   .anchor_box a {
     font-size: 1em;
     line-height: 150%;
   }
-  /* line 269, sass/partials/_base.scss */
+  /* line 272, sass/partials/_base.scss */
   .anchor_box a:hover {
     text-decoration: underline;
   }
 
-  /* line 274, sass/partials/_base.scss */
+  /* line 277, sass/partials/_base.scss */
   img.logo {
     max-width: 40%;
   }
 
-  /* line 277, sass/partials/_base.scss */
+  /* line 280, sass/partials/_base.scss */
   .wrapper {
     position: relative;
     margin: 0 auto;
