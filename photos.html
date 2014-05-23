@@ -7,15 +7,19 @@
 <!-- css and formatting -->
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
     <link rel="stylesheet" type="text/css" href="assets/css/gridism.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/arranmore_font.css">
 <!--     <link rel="stylesheet" type="text/css" href="assets/css/#.css"> -->
 
 <!--      <script src="#"></script> -->
 <!--     // <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
-    <script src="assets/js/jquery-1.10.2.min.js"></script>
-    <script src="assets/js/bigSlide.min.js"></script>
-    <script type="text/javascript" src="assets/js/spectragram.min.js"></script>
-    <script type="text/javascript" src="assets/js/instagram_criteria.js"></script>
+<!--     // <script src="assets/js/jquery-1.10.2.min.js"></script>
+    // <script src="assets/js/bigSlide.min.js"></script>
+    // <script type="text/javascript" src="assets/js/spectragram.min.js"></script>
+    // <script type="text/javascript" src="assets/js/instagram_criteria.js"></script> -->
 
+    <script src="assets/js/output.min.js"></script>
+    <script src="assets/modal/jquery.leanModal.min.js"></script>
+    
     <link href='http://fonts.googleapis.com/css?family=Rambla:400,700' rel='stylesheet' type='text/css'>
 
 <!--     FAVICON DATA -->
@@ -43,7 +47,7 @@
 <body class="wrapper push">
     <div class="wrap wider">
       <div class="grid">
-        <a href="#menu" class="menu-link pull-left hide-until-mobiles"><p class="small_menu">menu</p></a>
+        <a href="#menu" class="menu-link pull-left hide-until-mobiles"><span><i class="icon-menu"></i></span></a>
         <div class="unit whole align-center">
           <a href="index.html"><img class="logo" src="assets/img/ac_logo-04.png"></a>
         </div>
@@ -113,10 +117,31 @@
 
 <div style="height:10px;width:100%;"></div>
 
-<div class="wrap grid whole footer_bar">
-    <span style="float:left;"><a href="#">Thank Yous</a></span>
-    <span style="float:right;">Arranmore Challenge v2.0</span>
-</div>
+  <div class="wrap grid whole footer_bar">
+      <span style="float:left;"><a id="go" rel="leanModal" name="signup" href="#thankyou">Thank Yous</a></span>
+      <span style="float:right;">Arranmore Challenge v2.0</span>
+  </div>
+
+  <div id="thankyou" class="wrap grid whole">
+    <h2>Some People I Need to Thank:</h2>
+      <h3>Martin Gallagher</h3> 
+        <p>Owns the official Cup challenge twitter handle<a href="https://twitter.com/ArranChallenge">@ArranChallenge</a></p>
+      <h3>Rua and the Cup Challenge Committee</h3>
+        <p>Provided all the details about the Cup Challenge and it's teams </p>
+      <h3>Aoife Gallagher</h3>
+        <p>For some great <a href="http://instagram.com/aoifegallagher1992">instagram photos</a> for the <a href="http://arranmorechallenge.com/photos.html">photo feed</a></p>
+      <h3>Darren O'Donnell</h3>
+        <p>For another awesome <a href="http://instagram.com/dodonnell1210">instagram photo</a> for the <a href="http://arranmorechallenge.com/about.html">about page</a></p>
+      <h3>Twitter People</h3>
+        <p>For all the people on twitter helping out</p>
+      <button class="btn dark_highlight modal_close pull-right" href="#">close</button>
+  </div>
+
+  <script type="text/javascript">
+    $(function() {
+        $('a[rel*=leanModal]').leanModal({ top : 200, closeButton: ".modal_close" });   
+    });
+  </script>
 
 <!-- BIG SLIDE MENU -->
 <script>

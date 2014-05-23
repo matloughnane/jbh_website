@@ -40,10 +40,6 @@ p.smaller {
 	font-size: 15px;
 }
 
-p.small_menu {
-	font-size: 12px;
-}
-
 a {	
 	color: $main_color_dark;
 	text-decoration: none;
@@ -129,6 +125,38 @@ a {
 
 .insta_photo {
 	padding: 4px;
+}
+
+// =============== MODAL ====================
+
+#lean_overlay {
+    position: fixed;
+    z-index: 10000;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background-color: $main_color_light;
+    display: none;
+}
+
+#thankyou {
+	display:none;
+	max-width: 800px;
+	padding: 20px;
+    background-color: $bkg_color_lighter;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);
+    h2 {
+    	margin-right: 100px;
+    }
+    a {
+    	background-color: $main_color_light;
+    	// color:  $bkg_color_lighter;
+    	padding: 2px;
+    	margin: 2px;
+    }
 }
 
 /*
