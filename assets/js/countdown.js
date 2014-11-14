@@ -135,9 +135,7 @@ function renderDigit(container, number) {
 function render() {
   var now = new Date();
     difference = (grad.getTime() - now.getTime()); // subtraction amount - 2717618000
-
     diff = String(difference);
-    console.log(difference);
     len = diff.length;
   renderDigit(digit0, Number(diff.charAt(len-1)));
   renderDigit(digit1, Number(diff.charAt(len-2)));

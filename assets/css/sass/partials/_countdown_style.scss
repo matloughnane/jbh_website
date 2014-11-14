@@ -29,3 +29,63 @@
 .clock .digit .cell.on {
   opacity: 1;
 }
+
+
+/*MEDIA QUERIES*/
+
+/*TABLET*/
+
+@media screen and (max-width: 968px) { 
+
+  .clock {
+  padding-top: 10px;
+  font-size: 0;
+  text-align: center;
+  margin-top: 10px;
+  }
+  .clock .digit {
+    display: inline-block;
+    width: 66px;
+    margin: 2px;
+    transform: skewX(-1deg);
+  }
+
+  .clock .digit .cell {
+  width: 14px;
+  height: 14px;
+  margin: 1px;
+  background-color: $main_color_light;
+  border-radius: 1px;
+  display: inline-block;
+  opacity: 0.1;
+  }
+
+}
+
+/*MOBILE*/
+
+@media screen and (max-width: 640px) {
+
+  .clock {
+  font-size: 0;
+  text-align: center;
+  margin-top: 10px;
+  }
+  .clock .digit {
+    display: inline-block;
+    width: 44px;
+    margin: 0px;
+    transform: skewX(-1deg);
+  }
+
+  .clock .digit .cell {
+  width: 9px;
+  height: 9px;
+  margin: 0px;
+  background-color: $main_color_light;
+  border-radius: 0px;
+  display: inline-block;
+  opacity: 0.1;
+  }
+
+}
