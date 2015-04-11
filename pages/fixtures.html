@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arranmore Challenge</title>
+
+	<!-- META DATA -->
+
+	<!-- LINKED SHEETS -->
+	<link href='http://fonts.googleapis.com/css?family=Rambla:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+</head>
+<body class="wrap">
+
+<header class="grid unit whole align-center">
+	<img src="../assets/img/logo_shadow.png" class="logo">
+</header>
+
+<!-- NAVIGATION -->
+<nav class="desktop grid card hide-on-mobiles">
+	<ul>
+		<a href="../index.html"><li >Home</li></a>
+		<a href="about.html"><li>About</li></a>
+		<a href="fixtures.html"><li class="active">Fixtures</li></a>
+		<a href="live.html"><li>Live</li></a>
+		<a href="photos.html"><li>Photos</li></a>
+	</ul>
+</nav>
+<!-- MOBILE NAVIGATION -->
+<nav class="hide-until-mobiles">
+	<a href="#" class="cd-btn"><i class="icon-menu"></i></a>
+	<div class="cd-panel from-left">
+	    <div class="cd-panel-container">
+			<div class="cd-panel-content">
+				<ul>
+					<a href="index.html"><i class="icon-home"></i>Home</li></a>
+					<a href="pages/about.html"><li><i class="icon-info-circled"></i>About</li></a>
+					<a href="pages/fixtures.html"><li><i class="icon-calendar"></i>Fixtures</li></a>
+					<a href="pages/live.html"><li><i class="icon-rss"></i>Live</li></a>
+					<a href="pages/photos.html"><li><i class="icon-camera"></i>Photos</li></a>
+				</ul>
+			</div> <!-- cd-panel-content -->
+	    </div> <!-- cd-panel-container -->
+	</div> <!-- cd-panel -->
+</nav>
+
+
+<main class="grid">
+<section class="unit w-1-5 card primary_light anchor">
+	<a href="#">Group Stages</a>
+	<a href="#quarters">Quarter Finals</a>
+	<a href="#semis">Semi Finals</a>
+	<a href="#final">The Final</a>
+</section>
+<section class="unit w-4-5 card plain">
+	<h2>Groups</h2>
+	<div id="group_table">
+		<div class="loading align-center">
+			<!-- <img src="../assets/img/ball-triangle.svg" width="40"> -->
+			<img src="../assets/img/puff.svg" width="40">
+			<br>
+			<span>loading</span>
+		</div>
+	</div>
+	<h2>Quarters</h2>
+	<a id="quarters"></a>
+	<div id="quarters_table">
+		<div class="loading align-center">
+			<!-- <img src="../assets/img/ball-triangle.svg" width="40"> -->
+			<img src="../assets/img/puff.svg" width="40">
+			<br>
+			<span>loading</span>
+		</div>
+	</div>
+	<h2>Semis</h2>
+	<a id="semis"></a>
+	<div id="semis_table">
+		<div class="loading align-center">
+			<!-- <img src="../assets/img/ball-triangle.svg" width="40"> -->
+			<img src="../assets/img/puff.svg" width="40">
+			<br>
+			<span>loading</span>
+		</div>
+	</div>
+	<br>
+	<h2>Finals</h2>
+	<a id="final"></a>
+	<div id="finals_table">
+		<div class="loading align-center">
+			<!-- <img src="../assets/img/ball-triangle.svg" width="40"> -->
+			<img src="../assets/img/puff.svg" width="40">
+			<br>
+			<span>loading</span>
+		</div>
+	</div>
+</section>
+</main>
+
+<footer class="grid align-center shadow1">
+	 <a id="go" rel="leanModal" name="signup" href="#thankyou"> Thank Yous </a>&middot; Arranmore Challenge v3.0 &middot; by mat.loughnane
+</footer>
+
+<div id="thankyou" class="wrap grid whole">
+	<button class="btn btn_no_margin btn_primary modal_close pull-right" href="#">close</button>
+	<h2>Some People I Need to Thank:</h2>
+	  <h3>Martin Gallagher</h3> 
+	    <p>Owns the official Cup challenge twitter handle<a href="https://twitter.com/ArranChallenge" target="_blank">@ArranChallenge</a></p>
+	  <h3>Rua and the Cup Challenge Committee</h3>
+	    <p>Provided all the details about the Cup Challenge and it's teams </p>
+	  <h3>Aoife Gallagher</h3>
+	    <p>For some great <a href="http://instagram.com/aoifegallagher1992" target="_blank">instagram photos</a> for the <a href="http://arranmorechallenge.com/photos.html">photo feed</a></p>
+	  <h3>Dylan O'Donnell</h3>
+	    <p>For another awesome <a href="https://instagram.com/dylan_m_o_d/" target="_blank">instagram photo</a> for the <a href="http://arranmorechallenge.com/about.html">about page</a></p>
+	  <h3>Twitter People</h3>
+	    <p>For all the people on twitter helping out</p>
+</div>
+
+<script type="text/javascript" src="../assets/js/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="../assets/js/sidepanel.js"></script>
+<script type="text/javascript" src="../assets/js/jquery.leanModal.min.js"></script>
+
+<script type="text/javascript">
+	$(function() {
+	    $('a[rel*=leanModal]').leanModal({ top : 0, closeButton: ".modal_close" });   
+	});
+</script>
+
+</body>
+</html>

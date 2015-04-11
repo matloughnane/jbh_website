@@ -1,0 +1,57 @@
+nav.desktop {
+	background-color: $primary_dull;
+	ul {
+		background-color: $primary_dull;
+		color: $white;
+		list-style: none;
+		margin: 0px;
+		padding: 10px;
+		text-align: center;
+		text-transform: uppercase;
+		a {
+			color: $white;
+		}
+		li {
+			display: inline;
+			padding: 10px 20px;
+			&:hover {
+				box-shadow: 0px -5px 0px 0px $primary_light inset; 
+			}
+			&.active {
+				box-shadow: 0px -5px 0px 0px $primary inset; 
+			}
+			&:active {
+				background-color: $primary;
+			}
+		}
+	}
+}
+
+nav.alt {
+	background-color: $primary_light;
+	ul {
+		background-color: $primary_light;
+		color: $white;
+		list-style: none;
+		margin: 0px;
+		padding: 10px;
+		text-align: center;
+		text-transform: uppercase;
+		a {
+			color: $white;
+		}
+		li {
+			display: inline;
+			padding: 10px 20px;
+			&:hover {
+				box-shadow: 0px -5px 0px 0px $primary inset; 
+			}
+			&.active {
+				box-shadow: 0px -5px 0px 0px $primary_dull inset; 
+			}
+			&:active {
+				background-color: $primary;
+			}
+		}
+	}
+}
