@@ -1,0 +1,1126 @@
+@font-face {
+  font-family: 'arranmorechallenge';
+  src: url("../font/arranmorechallenge.eot?5115639");
+  src: url("../font/arranmorechallenge.eot?5115639#iefix") format("embedded-opentype"), url("../font/arranmorechallenge.woff?5115639") format("woff"), url("../font/arranmorechallenge.ttf?5115639") format("truetype"), url("../font/arranmorechallenge.svg?5115639#arranmorechallenge") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'arranmorechallenge';
+    src: url('../font/arranmorechallenge.svg?5115639#arranmorechallenge') format('svg');
+  }
+}
+*/
+/* line 22, partials/_fontello.scss */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "arranmorechallenge";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+/* line 53, partials/_fontello.scss */
+.icon-facebook-squared:before {
+  content: '\e800';
+}
+
+/* '' */
+/* line 54, partials/_fontello.scss */
+.icon-facebook:before {
+  content: '\e801';
+}
+
+/* '' */
+/* line 55, partials/_fontello.scss */
+.icon-linkedin-squared:before {
+  content: '\e802';
+}
+
+/* '' */
+/* line 56, partials/_fontello.scss */
+.icon-linkedin:before {
+  content: '\e803';
+}
+
+/* '' */
+/* line 57, partials/_fontello.scss */
+.icon-instagramm:before {
+  content: '\e804';
+}
+
+/* '' */
+/* line 58, partials/_fontello.scss */
+.icon-gplus:before {
+  content: '\e805';
+}
+
+/* '' */
+/* line 59, partials/_fontello.scss */
+.icon-gplus-squared:before {
+  content: '\e806';
+}
+
+/* '' */
+/* line 60, partials/_fontello.scss */
+.icon-tumblr:before {
+  content: '\e807';
+}
+
+/* '' */
+/* line 61, partials/_fontello.scss */
+.icon-tumblr-squared:before {
+  content: '\e808';
+}
+
+/* '' */
+/* line 62, partials/_fontello.scss */
+.icon-youtube-play:before {
+  content: '\e809';
+}
+
+/* '' */
+/* line 63, partials/_fontello.scss */
+.icon-youtube:before {
+  content: '\e80a';
+}
+
+/* '' */
+/* line 64, partials/_fontello.scss */
+.icon-vimeo-squared:before {
+  content: '\e80b';
+}
+
+/* '' */
+/* line 65, partials/_fontello.scss */
+.icon-twitter-squared:before {
+  content: '\e80c';
+}
+
+/* '' */
+/* line 66, partials/_fontello.scss */
+.icon-twitter:before {
+  content: '\e80d';
+}
+
+/* '' */
+/* line 67, partials/_fontello.scss */
+.icon-pinterest-squared:before {
+  content: '\e80e';
+}
+
+/* '' */
+/* line 68, partials/_fontello.scss */
+.icon-pinterest-circled:before {
+  content: '\e80f';
+}
+
+/* '' */
+/* line 69, partials/_fontello.scss */
+.icon-github-circled:before {
+  content: '\e810';
+}
+
+/* '' */
+/* line 70, partials/_fontello.scss */
+.icon-menu:before {
+  content: '\e811';
+}
+
+/* '' */
+/* line 71, partials/_fontello.scss */
+.icon-export:before {
+  content: '\e812';
+}
+
+/* '' */
+/* line 72, partials/_fontello.scss */
+.icon-export-alt:before {
+  content: '\e813';
+}
+
+/* '' */
+/* line 73, partials/_fontello.scss */
+.icon-info-circled:before {
+  content: '\e814';
+}
+
+/* '' */
+/* line 74, partials/_fontello.scss */
+.icon-info:before {
+  content: '\e815';
+}
+
+/* '' */
+/* line 75, partials/_fontello.scss */
+.icon-home:before {
+  content: '\e816';
+}
+
+/* '' */
+/* line 76, partials/_fontello.scss */
+.icon-angle-double-right:before {
+  content: '\e817';
+}
+
+/* '' */
+/* line 77, partials/_fontello.scss */
+.icon-angle-double-left:before {
+  content: '\e818';
+}
+
+/* '' */
+/* line 78, partials/_fontello.scss */
+.icon-calendar:before {
+  content: '\e819';
+}
+
+/* '' */
+/* line 79, partials/_fontello.scss */
+.icon-camera:before {
+  content: '\e81a';
+}
+
+/* '' */
+/* line 80, partials/_fontello.scss */
+.icon-camera-alt:before {
+  content: '\e81b';
+}
+
+/* '' */
+/* line 81, partials/_fontello.scss */
+.icon-rss:before {
+  content: '\e81c';
+}
+
+/* '' */
+/* line 82, partials/_fontello.scss */
+.icon-rss-squared:before {
+  content: '\e81d';
+}
+
+/* '' */
+/* line 83, partials/_fontello.scss */
+.icon-thumbs-up-alt:before {
+  content: '\e81e';
+}
+
+/* '' */
+/* line 84, partials/_fontello.scss */
+.icon-thumbs-up:before {
+  content: '\e81f';
+}
+
+/* '' */
+/*
+ * Gridism
+ * A simple, responsive, and handy CSS grid by @cobyism
+ * https://github.com/cobyism/gridism
+ */
+/* Preserve some sanity */
+/* line 9, partials/_gridism.scss */
+.grid,
+.unit {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Set up some rules to govern the grid */
+/* line 16, partials/_gridism.scss */
+.grid {
+  display: block;
+  clear: both;
+}
+
+/* line 20, partials/_gridism.scss */
+.grid .unit {
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+
+/* This ensures the outer gutters are equal to the (doubled) inner gutters. */
+/*.grid .unit:first-child { padding-left: 20px; }
+.grid .unit:last-child { padding-right: 20px; }*/
+/* Nested grids already have padding though, so let’s nuke it */
+/*.unit .unit:first-child { padding-left: 0; }
+.unit .unit:last-child { padding-right: 0; }*/
+/* line 33, partials/_gridism.scss */
+.unit .grid:first-child > .unit {
+  padding-top: 0;
+}
+
+/* line 34, partials/_gridism.scss */
+.unit .grid:last-child > .unit {
+  padding-bottom: 0;
+}
+
+/* Let people nuke the gutters/padding completely in a couple of ways */
+/* line 38, partials/_gridism.scss */
+.no-gutters .unit,
+.unit.no-gutters {
+  padding: 0 !important;
+}
+
+/* Wrapping at a maximum width is optional */
+/* line 44, partials/_gridism.scss */
+.wrap .grid,
+.grid.wrap {
+  max-width: 978px;
+  margin: 0 auto;
+}
+
+/* Width classes also have shorthand versions numbered as fractions
+ * For example: for a grid unit 1/3 (one third) of the parent width,
+ * simply apply class="w-1-3" to the element. */
+/* line 52, partials/_gridism.scss */
+.grid .whole, .grid .w-1-1 {
+  width: 100%;
+}
+
+/* line 53, partials/_gridism.scss */
+.grid .half, .grid .w-1-2 {
+  width: 50%;
+}
+
+/* line 54, partials/_gridism.scss */
+.grid .one-third, .grid .w-1-3 {
+  width: 33.3332%;
+}
+
+/* line 55, partials/_gridism.scss */
+.grid .two-thirds, .grid .w-2-3 {
+  width: 66.6665%;
+}
+
+/* line 56, partials/_gridism.scss */
+.grid .one-quarter, .grid .w-1-4 {
+  width: 25%;
+}
+
+/* line 57, partials/_gridism.scss */
+.grid .three-quarters, .grid .w-3-4 {
+  width: 75%;
+}
+
+/* line 58, partials/_gridism.scss */
+.grid .one-fifth, .grid .w-1-5 {
+  width: 20%;
+}
+
+/* line 59, partials/_gridism.scss */
+.grid .two-fifths, .grid .w-2-5 {
+  width: 40%;
+}
+
+/* line 60, partials/_gridism.scss */
+.grid .three-fifths, .grid .w-3-5 {
+  width: 60%;
+}
+
+/* line 61, partials/_gridism.scss */
+.grid .four-fifths, .grid .w-4-5 {
+  width: 80%;
+}
+
+/* line 62, partials/_gridism.scss */
+.grid .golden-small, .grid .w-g-s {
+  width: 38.2716%;
+}
+
+/* Golden section: smaller piece */
+/* line 63, partials/_gridism.scss */
+.grid .golden-large, .grid .w-g-l {
+  width: 61.7283%;
+}
+
+/* Golden section: larger piece */
+/* Clearfix after every .grid */
+/* line 66, partials/_gridism.scss */
+.grid {
+  *zoom: 1;
+}
+
+/* line 69, partials/_gridism.scss */
+.grid:before, .grid:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+/* line 74, partials/_gridism.scss */
+.grid:after {
+  clear: both;
+}
+
+/* Utility classes */
+/* line 79, partials/_gridism.scss */
+.align-center {
+  text-align: center;
+}
+
+/* line 80, partials/_gridism.scss */
+.align-left {
+  text-align: left;
+}
+
+/* line 81, partials/_gridism.scss */
+.align-right {
+  text-align: right;
+}
+
+/* line 82, partials/_gridism.scss */
+.pull-left {
+  float: left;
+}
+
+/* line 83, partials/_gridism.scss */
+.pull-right {
+  float: right;
+}
+
+/* line 85, partials/_gridism.scss */
+.hide-until-mobiles {
+  display: none !important;
+}
+
+/* Responsive Stuff */
+@media screen and (max-width: 568px) {
+  /* Stack anything that isn’t full-width on smaller screens */
+  /* line 92, partials/_gridism.scss */
+  .grid .unit {
+    width: 100% !important;
+  }
+
+  /* line 97, partials/_gridism.scss */
+  .unit .grid .unit {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  /* Sometimes, you just want to be different on small screens */
+  /* line 103, partials/_gridism.scss */
+  .center-on-mobiles {
+    text-align: center !important;
+  }
+
+  /* line 106, partials/_gridism.scss */
+  .hide-on-mobiles {
+    display: none !important;
+  }
+
+  /* line 109, partials/_gridism.scss */
+  .hide-until-mobiles {
+    display: block !important;
+  }
+
+  /* line 112, partials/_gridism.scss */
+  .remove_margin_mobile {
+    margin-bottom: 0px !important;
+  }
+
+  /* line 116, partials/_gridism.scss */
+  .wrap {
+    padding: 5px;
+  }
+}
+/* Expand the wrap a bit further on larger screens */
+@media screen and (min-width: 1180px) {
+  /* line 123, partials/_gridism.scss */
+  .wider .grid {
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+}
+/* line 1, partials/_layout.scss */
+body {
+  font-family: "Rambla", sans-serif;
+  margin: 0px;
+  font-size: 100%;
+  font-weight: 300;
+  color: #424242;
+  background: #dadfe1;
+}
+
+/* line 10, partials/_layout.scss */
+::selection {
+  background: #d64541;
+}
+
+/* line 14, partials/_layout.scss */
+::-moz-selection {
+  background: #d64541;
+}
+
+/* line 19, partials/_layout.scss */
+a {
+  color: #cf000f;
+  text-decoration: none;
+}
+
+/* line 24, partials/_layout.scss */
+h1, h2, h3 {
+  -webkit-margin-before: 0.15em;
+  -webkit-margin-after: 0.15em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+/* line 31, partials/_layout.scss */
+h4, h5, h6 {
+  font-weight: 550;
+  -webkit-margin-before: 0.1em;
+  -webkit-margin-after: 0.1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+/* line 39, partials/_layout.scss */
+p {
+  font-size: 1.1em;
+  font-weight: 200;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+/* line 46, partials/_layout.scss */
+p.thinner {
+  font-size: 1em;
+  -webkit-margin-before: 0.5em;
+  -webkit-margin-after: 0.5em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+/* line 53, partials/_layout.scss */
+p.smaller {
+  font-size: 0.92em;
+}
+
+/* line 58, partials/_layout.scss */
+h1 {
+  font-size: 2em;
+}
+
+/* line 62, partials/_layout.scss */
+h2 {
+  font-size: 1.25em;
+}
+
+/* line 66, partials/_layout.scss */
+.bold_statement {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* line 75, partials/_layout.scss */
+.card {
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  margin-bottom: 10px !important;
+}
+
+/* line 81, partials/_layout.scss */
+.padded_left_right {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+/* line 86, partials/_layout.scss */
+.plain {
+  background: whitesmoke;
+  color: #424242;
+}
+
+/* line 90, partials/_layout.scss */
+.primary {
+  background: #cf000f;
+  color: whitesmoke;
+}
+
+/* line 94, partials/_layout.scss */
+.primary_light {
+  background: #d64541;
+  color: whitesmoke;
+}
+
+/* line 98, partials/_layout.scss */
+.primary_dull {
+  background: #96281b;
+  color: whitesmoke;
+}
+
+/* line 103, partials/_layout.scss */
+.shadow1 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+/* line 107, partials/_layout.scss */
+footer {
+  background-color: #d64541;
+  color: whitesmoke;
+  font-size: 0.75em;
+  padding: 5px 0px;
+  bottom: 0px;
+}
+/* line 114, partials/_layout.scss */
+footer a {
+  color: whitesmoke;
+}
+
+/* line 122, partials/_layout.scss */
+.share a {
+  color: #96281b;
+  font-size: 2.5em;
+}
+/* line 125, partials/_layout.scss */
+.share a.external {
+  display: block;
+  margin: 5px 0;
+  font-size: 1em;
+}
+/* line 129, partials/_layout.scss */
+.share a.external:hover {
+  color: whitesmoke;
+  background-color: #d64541;
+}
+/* line 134, partials/_layout.scss */
+.share a i {
+  margin: 12px;
+}
+
+/* line 140, partials/_layout.scss */
+.share_bar {
+  margin: 16px 0px;
+}
+
+/* line 145, partials/_layout.scss */
+a.facebook {
+  color: #3b5998;
+}
+/* line 147, partials/_layout.scss */
+a.facebook:hover {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+/* line 151, partials/_layout.scss */
+a.twitter {
+  color: #00aced;
+}
+/* line 153, partials/_layout.scss */
+a.twitter:hover {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+/* line 157, partials/_layout.scss */
+a.instagram {
+  color: #517fa4;
+}
+/* line 159, partials/_layout.scss */
+a.instagram:hover {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+/* line 163, partials/_layout.scss */
+a.gplus {
+  color: #dd4b39;
+}
+/* line 165, partials/_layout.scss */
+a.gplus:hover {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+/* line 174, partials/_layout.scss */
+.anchor a {
+  color: white;
+  display: block;
+  font-size: 1.25em;
+  line-height: 1.25em;
+}
+
+/* line 184, partials/_layout.scss */
+.arranmore_test {
+  text-align: center;
+}
+/* line 186, partials/_layout.scss */
+.arranmore_test span {
+  margin: 5px;
+}
+
+/* line 195, partials/_layout.scss */
+img {
+  max-width: 100%;
+}
+/* line 197, partials/_layout.scss */
+img.logo {
+  margin: 10px 0px;
+  max-width: 15em;
+}
+
+/* line 203, partials/_layout.scss */
+figure {
+  display: block;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  overflow: hidden;
+}
+
+/* line 5, partials/_buttons.scss */
+.btn {
+  border: none;
+  background: none;
+  padding: 8px 10px;
+  display: inline-block;
+  margin: 5px 2px;
+  text-decoration: none;
+  outline: none;
+  position: relative;
+  border-radius: 2px;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+  cursor: pointer;
+}
+
+/* line 21, partials/_buttons.scss */
+.btn_no_margin {
+  margin: 0px 2px !important;
+}
+
+/* line 25, partials/_buttons.scss */
+.btn_primary {
+  background-color: #cf000f !important;
+  color: whitesmoke !important;
+  box-shadow: 0px -2px 0px 0px #96281b inset;
+}
+/* line 29, partials/_buttons.scss */
+.btn_primary:hover {
+  box-shadow: 0px -4px 0px 0px #96281b inset;
+}
+/* line 32, partials/_buttons.scss */
+.btn_primary:active {
+  background-color: #96281b !important;
+  color: whitesmoke !important;
+}
+
+/* line 38, partials/_buttons.scss */
+.btn_primary_light {
+  background-color: #d64541 !important;
+  color: whitesmoke !important;
+  box-shadow: 0px -2px 0px 0px #96281b inset;
+}
+/* line 42, partials/_buttons.scss */
+.btn_primary_light:hover {
+  box-shadow: 0px -4px 0px 0px #96281b inset;
+}
+/* line 47, partials/_buttons.scss */
+.btn_primary_light:active {
+  background-color: #cf000f !important;
+  color: whitesmoke !important;
+}
+
+/* line 1, partials/_tables.scss */
+table {
+  color: #424242;
+}
+
+/* line 1, partials/_navigation.scss */
+nav.desktop {
+  background-color: #96281b;
+}
+/* line 3, partials/_navigation.scss */
+nav.desktop ul {
+  background-color: #96281b;
+  color: white;
+  list-style: none;
+  margin: 0px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 11, partials/_navigation.scss */
+nav.desktop ul a {
+  color: white;
+}
+/* line 14, partials/_navigation.scss */
+nav.desktop ul li {
+  display: inline;
+  padding: 10px 20px;
+}
+/* line 17, partials/_navigation.scss */
+nav.desktop ul li:hover {
+  box-shadow: 0px -5px 0px 0px #d64541 inset;
+}
+/* line 20, partials/_navigation.scss */
+nav.desktop ul li.active {
+  box-shadow: 0px -5px 0px 0px #cf000f inset;
+}
+/* line 23, partials/_navigation.scss */
+nav.desktop ul li:active {
+  background-color: #cf000f;
+}
+
+/* line 30, partials/_navigation.scss */
+nav.alt {
+  background-color: #d64541;
+}
+/* line 32, partials/_navigation.scss */
+nav.alt ul {
+  background-color: #d64541;
+  color: white;
+  list-style: none;
+  margin: 0px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 40, partials/_navigation.scss */
+nav.alt ul a {
+  color: white;
+}
+/* line 43, partials/_navigation.scss */
+nav.alt ul li {
+  display: inline;
+  padding: 10px 20px;
+}
+/* line 46, partials/_navigation.scss */
+nav.alt ul li:hover {
+  box-shadow: 0px -5px 0px 0px #cf000f inset;
+}
+/* line 49, partials/_navigation.scss */
+nav.alt ul li.active {
+  box-shadow: 0px -5px 0px 0px #96281b inset;
+}
+/* line 52, partials/_navigation.scss */
+nav.alt ul li:active {
+  background-color: #cf000f;
+}
+
+/* line 1, partials/_modal.scss */
+#lean_overlay {
+  position: fixed;
+  z-index: 10000;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: #424242;
+  display: none;
+}
+
+/* line 11, partials/_modal.scss */
+#thankyou {
+  display: none;
+  max-width: 800px;
+  padding: 20px;
+  background-color: whitesmoke;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+/* line 20, partials/_modal.scss */
+#thankyou h2 {
+  font-size: 1em;
+}
+
+/* line 23, partials/_modal.scss */
+#thankyou h3 {
+  font-size: 1em;
+}
+
+/* line 26, partials/_modal.scss */
+#thankyou a {
+  color: whitesmoke;
+  background-color: #d64541;
+  padding: 2px;
+  margin: 2px;
+}
+
+/* -------------------------------- 
+SIDE PANEL
+-------------------------------- */
+/* line 5, partials/_sidepanel.scss */
+a.cd-btn {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+/* line 9, partials/_sidepanel.scss */
+a.cd-btn i {
+  font-size: 1.5em;
+}
+
+/* line 14, partials/_sidepanel.scss */
+.cd-panel::after, .cd-panel::before {
+  content: '';
+}
+
+/* line 18, partials/_sidepanel.scss */
+.cd-panel {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  -webkit-transition: visibility 0s 0.5s;
+  -moz-transition: visibility 0s 0.5s;
+  transition: visibility 0s 0.5s;
+}
+
+/* line 31, partials/_sidepanel.scss */
+.cd-panel::after {
+  /* overlay layer */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  cursor: pointer;
+  -webkit-transition: background 0.3s 0.3s;
+  -moz-transition: background 0.3s 0.3s;
+  transition: background 0.3s 0.3s;
+}
+
+/* line 45, partials/_sidepanel.scss */
+.cd-panel.is-visible {
+  visibility: visible;
+  -webkit-transition: visibility 0s 0s;
+  -moz-transition: visibility 0s 0s;
+  transition: visibility 0s 0s;
+}
+
+/* line 52, partials/_sidepanel.scss */
+.cd-panel.is-visible::after {
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-transition: background 0.3s 0s;
+  -moz-transition: background 0.3s 0s;
+  transition: background 0.3s 0s;
+}
+
+/* line 59, partials/_sidepanel.scss */
+.cd-panel.is-visible .cd-panel-close::before {
+  -webkit-animation: cd-close-1 0.6s 0.3s;
+  -moz-animation: cd-close-1 0.6s 0.3s;
+  animation: cd-close-1 0.6s 0.3s;
+}
+
+/* line 64, partials/_sidepanel.scss */
+.cd-panel.is-visible .cd-panel-close::after {
+  -webkit-animation: cd-close-2 0.6s 0.3s;
+  -moz-animation: cd-close-2 0.6s 0.3s;
+  animation: cd-close-2 0.6s 0.3s;
+}
+
+@-webkit-keyframes cd-close-1 {
+  /* line 73, partials/_sidepanel.scss */
+  0%, 50% {
+    -webkit-transform: rotate(0);
+  }
+
+  /* line 76, partials/_sidepanel.scss */
+  100% {
+    -webkit-transform: rotate(45deg);
+  }
+}
+
+@-moz-keyframes cd-close-1 {
+  /* line 81, partials/_sidepanel.scss */
+  0%, 50% {
+    -moz-transform: rotate(0);
+  }
+
+  /* line 84, partials/_sidepanel.scss */
+  100% {
+    -moz-transform: rotate(45deg);
+  }
+}
+
+@keyframes cd-close-1 {
+  /* line 89, partials/_sidepanel.scss */
+  0%, 50% {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  /* line 96, partials/_sidepanel.scss */
+  100% {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+@-webkit-keyframes cd-close-2 {
+  /* line 105, partials/_sidepanel.scss */
+  0%, 50% {
+    -webkit-transform: rotate(0);
+  }
+
+  /* line 108, partials/_sidepanel.scss */
+  100% {
+    -webkit-transform: rotate(-45deg);
+  }
+}
+
+@-moz-keyframes cd-close-2 {
+  /* line 113, partials/_sidepanel.scss */
+  0%, 50% {
+    -moz-transform: rotate(0);
+  }
+
+  /* line 116, partials/_sidepanel.scss */
+  100% {
+    -moz-transform: rotate(-45deg);
+  }
+}
+
+@keyframes cd-close-2 {
+  /* line 121, partials/_sidepanel.scss */
+  0%, 50% {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  /* line 128, partials/_sidepanel.scss */
+  100% {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}
+
+/* line 138, partials/_sidepanel.scss */
+.cd-panel-container {
+  position: fixed;
+  z-index: 1000;
+  width: 250px;
+  height: 100%;
+  top: 0;
+  background: whitesmoke;
+  color: #96281b;
+  box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.3);
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+/* line 157, partials/_sidepanel.scss */
+.from-right .cd-panel-container {
+  right: 0;
+  -webkit-transform: translate3d(100%, 0, 0);
+  -moz-transform: translate3d(100%, 0, 0);
+  -ms-transform: translate3d(100%, 0, 0);
+  -o-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
+
+/* line 165, partials/_sidepanel.scss */
+.from-left .cd-panel-container {
+  left: 0;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+  -o-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+/* line 173, partials/_sidepanel.scss */
+.is-visible .cd-panel-container {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+@media only screen and (min-width: 1170px) {
+  /* line 187, partials/_sidepanel.scss */
+  .cd-panel-container {
+    width: 250px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 194, partials/_sidepanel.scss */
+  .cd-panel-container {
+    width: 250px;
+  }
+}
+/* line 199, partials/_sidepanel.scss */
+.cd-panel-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /* smooth scrolling on touch devices */
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 211, partials/_sidepanel.scss */
+.cd-panel-content ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+/* line 215, partials/_sidepanel.scss */
+.cd-panel-content ul a {
+  display: block;
+  color: #96281b;
+  padding: 0px;
+}
+/* line 219, partials/_sidepanel.scss */
+.cd-panel-content ul a li {
+  padding: 1em;
+}
+/* line 221, partials/_sidepanel.scss */
+.cd-panel-content ul a li i {
+  font-size: 1em;
+  padding-left: 0.5em;
+  margin-right: 1em;
+}
