@@ -8,11 +8,11 @@ body {
 }
 
 ::selection {
-  background: $primary_light_alpha;
+  background: $primary_lightest;
   // color: $bkg_light;
 }
 ::-moz-selection {
-  background: $primary_light_alpha;
+  background: $primary_lightest;
   // color: $bkg_light;
 }
 
@@ -186,6 +186,11 @@ a {
 	span {
 		margin: 5px;
 	}
+}
+
+// ADMIN
+.list {
+    border: 1px dotted $bkg_overlay;
 }
 
 // ==========================================

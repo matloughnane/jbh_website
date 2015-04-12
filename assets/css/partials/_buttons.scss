@@ -49,3 +49,20 @@
 		color: $bkg_light !important;
 	}
 }
+
+.btn_remove {
+	margin: 0px 0px;
+	padding: 5px 8px;
+	background-color: $primary_light !important;
+	color: $bkg_light !important;
+	box-shadow: 0px -2px 0px 0px $primary_dull inset;
+	&:hover {
+		// box-shadow: 0px -3px 0px 0px $primary inset;
+		// color: $primary_dull !important;
+		box-shadow: 0px -4px 0px 0px $primary_dull inset;
+	}
+	&:active {
+		background-color: $primary !important;
+		color: $bkg_light !important;
+	}
+}

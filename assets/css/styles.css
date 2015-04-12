@@ -358,51 +358,56 @@
 }
 
 /* Golden section: larger piece */
-/* Clearfix after every .grid */
 /* line 66, partials/_gridism.scss */
+.grid .one-sixth, .grid .w-1-6 {
+  width: 16.666%;
+}
+
+/* Clearfix after every .grid */
+/* line 69, partials/_gridism.scss */
 .grid {
   *zoom: 1;
 }
 
-/* line 69, partials/_gridism.scss */
+/* line 72, partials/_gridism.scss */
 .grid:before, .grid:after {
   display: table;
   content: "";
   line-height: 0;
 }
 
-/* line 74, partials/_gridism.scss */
+/* line 77, partials/_gridism.scss */
 .grid:after {
   clear: both;
 }
 
 /* Utility classes */
-/* line 79, partials/_gridism.scss */
+/* line 82, partials/_gridism.scss */
 .align-center {
   text-align: center;
 }
 
-/* line 80, partials/_gridism.scss */
+/* line 83, partials/_gridism.scss */
 .align-left {
   text-align: left;
 }
 
-/* line 81, partials/_gridism.scss */
+/* line 84, partials/_gridism.scss */
 .align-right {
   text-align: right;
 }
 
-/* line 82, partials/_gridism.scss */
+/* line 85, partials/_gridism.scss */
 .pull-left {
   float: left;
 }
 
-/* line 83, partials/_gridism.scss */
+/* line 86, partials/_gridism.scss */
 .pull-right {
   float: right;
 }
 
-/* line 85, partials/_gridism.scss */
+/* line 88, partials/_gridism.scss */
 .hide-until-mobiles {
   display: none !important;
 }
@@ -410,46 +415,46 @@
 /* Responsive Stuff */
 @media screen and (max-width: 568px) {
   /* Stack anything that isn’t full-width on smaller screens */
-  /* line 92, partials/_gridism.scss */
+  /* line 95, partials/_gridism.scss */
   .grid .unit {
     width: 100% !important;
   }
 
-  /* line 97, partials/_gridism.scss */
+  /* line 100, partials/_gridism.scss */
   .unit .grid .unit {
     padding-left: 5px;
     padding-right: 5px;
   }
 
   /* Sometimes, you just want to be different on small screens */
-  /* line 103, partials/_gridism.scss */
+  /* line 106, partials/_gridism.scss */
   .center-on-mobiles {
     text-align: center !important;
   }
 
-  /* line 106, partials/_gridism.scss */
+  /* line 109, partials/_gridism.scss */
   .hide-on-mobiles {
     display: none !important;
   }
 
-  /* line 109, partials/_gridism.scss */
+  /* line 112, partials/_gridism.scss */
   .hide-until-mobiles {
     display: block !important;
   }
 
-  /* line 112, partials/_gridism.scss */
+  /* line 115, partials/_gridism.scss */
   .remove_margin_mobile {
     margin-bottom: 0px !important;
   }
 
-  /* line 116, partials/_gridism.scss */
+  /* line 119, partials/_gridism.scss */
   .wrap {
     padding: 5px;
   }
 }
 /* Expand the wrap a bit further on larger screens */
 @media screen and (min-width: 1180px) {
-  /* line 123, partials/_gridism.scss */
+  /* line 126, partials/_gridism.scss */
   .wider .grid {
     max-width: 1180px;
     margin: 0 auto;
@@ -467,12 +472,12 @@ body {
 
 /* line 10, partials/_layout.scss */
 ::selection {
-  background: #d64541;
+  background: #f2c3c2;
 }
 
 /* line 14, partials/_layout.scss */
 ::-moz-selection {
-  background: #d64541;
+  background: #f2c3c2;
 }
 
 /* line 19, partials/_layout.scss */
@@ -667,17 +672,22 @@ a.gplus:hover {
   margin: 5px;
 }
 
-/* line 195, partials/_layout.scss */
+/* line 192, partials/_layout.scss */
+.list {
+  border: 1px dotted rgba(0, 0, 0, 0.3);
+}
+
+/* line 200, partials/_layout.scss */
 img {
   max-width: 100%;
 }
-/* line 197, partials/_layout.scss */
+/* line 202, partials/_layout.scss */
 img.logo {
   margin: 10px 0px;
   max-width: 15em;
 }
 
-/* line 203, partials/_layout.scss */
+/* line 208, partials/_layout.scss */
 figure {
   display: block;
   -webkit-margin-before: 0;
@@ -741,9 +751,120 @@ figure {
   color: whitesmoke !important;
 }
 
+/* line 53, partials/_buttons.scss */
+.btn_remove {
+  margin: 0px 0px;
+  padding: 5px 8px;
+  background-color: #d64541 !important;
+  color: whitesmoke !important;
+  box-shadow: 0px -2px 0px 0px #96281b inset;
+}
+/* line 59, partials/_buttons.scss */
+.btn_remove:hover {
+  box-shadow: 0px -4px 0px 0px #96281b inset;
+}
+/* line 64, partials/_buttons.scss */
+.btn_remove:active {
+  background-color: #cf000f !important;
+  color: whitesmoke !important;
+}
+
 /* line 1, partials/_tables.scss */
 table {
+  text-align: left;
+  width: 100%;
   color: #424242;
+  border-collapse: collapse;
+  margin: 10px 0px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+/* line 8, partials/_tables.scss */
+table th {
+  background-color: #96281b;
+  color: whitesmoke;
+  padding: 8px 5px;
+  text-transform: uppercase;
+}
+/* line 15, partials/_tables.scss */
+table tr:nth-child(even) {
+  background-color: #f2c3c2;
+}
+/* line 19, partials/_tables.scss */
+table td {
+  padding: 8px 8px;
+  width: 25%;
+}
+
+/* line 27, partials/_tables.scss */
+table.group td:nth-child(2n-1) {
+  background-color: #f2c3c2;
+}
+/* line 32, partials/_tables.scss */
+table.group tr:nth-child(even) {
+  background-color: whitesmoke;
+}
+
+/* line 40, partials/_tables.scss */
+table.game th {
+  text-align: center;
+}
+/* line 44, partials/_tables.scss */
+table.game td:nth-child(1) {
+  width: 20%;
+  text-align: center;
+}
+/* line 48, partials/_tables.scss */
+table.game td:nth-child(2) {
+  text-align: right;
+  width: 30%;
+}
+/* line 52, partials/_tables.scss */
+table.game td:nth-child(3) {
+  text-align: right;
+  width: 10%;
+}
+/* line 56, partials/_tables.scss */
+table.game td:nth-child(4) {
+  width: 10%;
+}
+/* line 59, partials/_tables.scss */
+table.game td:nth-child(5) {
+  width: 30%;
+}
+/* line 64, partials/_tables.scss */
+table.game tr:hover {
+  background-color: #cf000f;
+  color: white;
+}
+
+/* line 71, partials/_tables.scss */
+table.winners {
+  text-align: center;
+}
+/* line 74, partials/_tables.scss */
+table.winners tr:nth-child(2n+1) {
+  background-color: whitesmoke;
+}
+/* line 77, partials/_tables.scss */
+table.winners tr:hover {
+  background-color: #cf000f;
+  color: white;
+}
+/* line 82, partials/_tables.scss */
+table.winners th {
+  text-align: center;
+}
+/* line 86, partials/_tables.scss */
+table.winners td:nth-child(1) {
+  width: 20%;
+}
+/* line 89, partials/_tables.scss */
+table.winners td:nth-child(2) {
+  width: 40%;
+}
+/* line 92, partials/_tables.scss */
+table.winners td:nth-child(3) {
+  width: 40%;
 }
 
 /* line 1, partials/_navigation.scss */
@@ -816,6 +937,37 @@ nav.alt ul li.active {
 /* line 52, partials/_navigation.scss */
 nav.alt ul li:active {
   background-color: #cf000f;
+}
+
+/* line 1, partials/_forms.scss */
+form {
+  border: 1px dotted rgba(0, 0, 0, 0.3);
+  background-color: #f2c3c2;
+  margin: 10px;
+}
+/* line 5, partials/_forms.scss */
+form label {
+  display: inline-block;
+  margin: 5px 25px;
+  width: 100px;
+}
+/* line 10, partials/_forms.scss */
+form input {
+  padding: 5px;
+  width: 200px;
+}
+/* line 13, partials/_forms.scss */
+form input:focus {
+  outline: #cf000f;
+}
+/* line 16, partials/_forms.scss */
+form input[type="text"] {
+  width: 100px;
+}
+/* line 20, partials/_forms.scss */
+form select {
+  padding: 5px;
+  width: 150px;
 }
 
 /* line 1, partials/_modal.scss */

@@ -53,9 +53,10 @@
 	<ul>
 		<a href="../index.html"><li >Home</li></a>
 		<a href="about.html"><li>About</li></a>
-		<a href="fixtures.html"><li class="active">Fixtures</li></a>
+		<a href="fixtures.html"><li>Fixtures</li></a>
 		<a href="live.html"><li>Live</li></a>
 		<a href="photos.html"><li>Photos</li></a>
+		<a href="#"><li class="active">Admin</li></a>
 	</ul>
 </nav>
 <!-- MOBILE NAVIGATION -->
@@ -70,6 +71,7 @@
 					<a href="fixtures.html"><li><i class="icon-calendar"></i>Fixtures</li></a>
 					<a href="live.html"><li><i class="icon-rss"></i>Live</li></a>
 					<a href="photos.html"><li><i class="icon-camera"></i>Photos</li></a>
+					<a href="#"><li class="active">Admin</li></a>
 				</ul>
 			</div> <!-- cd-panel-content -->
 	    </div> <!-- cd-panel-container -->
@@ -85,6 +87,68 @@
 	<a href="#final">The Final</a>
 </section>
 <section class="unit w-4-5 card plain">
+	<h2>Add Game</h2>
+	<form class="grid unit whole card">
+		<label>Choose a game</label>
+		<select placeholder="Pick a Game" id="game_selection">
+			<option value="group">Select a game</option>
+			<option value="group">Groups game</option>
+			<option value="quarter">Quarters game</option>
+			<option value="semi">Semi game</option>
+			<option value="final">Final game</option>
+		</select> <br>
+		<label>Time</label>
+		<select id="game_times">
+		</select> <br>
+		<label>Team 1</label>
+		<select  id="team1">
+			<option>Choose A Team</option>
+			<option>Finn Harps Youths</option>
+			<option>Tory Celtic</option>
+			<option>Stonecutters</option>
+			<option>Barhale</option>
+			<option>The Rebels</option>
+			<option>F.C. Palatico</option>
+			<option>Riverside F.C.</option>
+			<option>Arranmore Utd</option>
+			<option>Midland Warriors</option>
+			<option>FC Internazionale</option>
+			<option>Real Lypis</option>
+			<option>Gallagher Tunnelling</option>
+			<option>St. Annes</option>
+			<option>Damo's Dream</option>
+			<option>Northern Tunneling</option>
+			<option>Clannad Celtic</option>
+		</select> <br>
+		<label>Team 1 Score</label>
+		<input type="text" id="team1_score" name="team1_score"><br>
+		<label>Team 2</label>
+		<select  id="team2">
+			<option>Choose A Team</option>
+			<option>Finn Harps Youths</option>
+			<option>Tory Celtic</option>
+			<option>Stonecutters</option>
+			<option>Barhale</option>
+			<option>The Rebels</option>
+			<option>F.C. Palatico</option>
+			<option>Riverside F.C.</option>
+			<option>Arranmore Utd</option>
+			<option>Midland Warriors</option>
+			<option>FC Internazionale</option>
+			<option>Real Lypis</option>
+			<option>Gallagher Tunnelling</option>
+			<option>St. Annes</option>
+			<option>Damo's Dream</option>
+			<option>Northern Tunneling</option>
+			<option>Clannad Celtic</option>
+		</select> <br>
+		<label>Team 2 Score</label>
+		<input type="text" id="team2_score" name="team2_score"><br>
+		<div class="align-center">
+			<a class="btn btn_primary btn_add">Add A Game</a>
+		</div>
+	</form>
+
 	<h2>Groups</h2>
 	<div id="group_table">
 		<div class="loading align-center">
@@ -95,6 +159,16 @@
 	</div>
 
 	<h2>Group Games</h2>
+	<div id="group_games_list">
+		<div class="grid">
+			<div class="unit w-1-6"> GAME NUMBER </div>
+			<div class="unit w-1-6"> DATE </div>
+			<div class="unit w-1-6"> TEAM 1</div>
+			<div class="unit w-1-6"> SCORE 1</div>
+			<div class="unit w-1-6"> SCORE 2</div>
+			<div class="unit w-1-6"> TEAM 2</div>
+		</div>
+	</div>
 	<div id="group_games_table">
 		<div class="loading align-center">
 			<img src="../assets/img/puff.svg" width="40">
@@ -105,6 +179,8 @@
 
 	<h2>Quarters</h2>
 	<a id="quarters"></a>
+
+	<div id="quarter_games_list"></div>
 	<div id="quarters_table">
 		<div class="loading align-center">
 			<img src="../assets/img/puff.svg" width="40">
@@ -115,7 +191,7 @@
 
 	<h2>Semis</h2>
 	<a id="semis"></a>
-
+	<div id="semi_games_list"></div>
 	<div id="semis_table">
 		<div class="loading align-center">
 			<img src="../assets/img/puff.svg" width="40">
@@ -127,6 +203,7 @@
 
 	<h2>Finals</h2>
 	<a id="final"></a>
+	<div id="final_games_list"></div>
 	<div id="final_table">
 		<div class="loading align-center">
 			<img src="../assets/img/puff.svg" width="40">
@@ -161,12 +238,54 @@
 <script type="text/javascript" src="../assets/js/sidepanel.js"></script>
 <script type="text/javascript" src="../assets/js/jquery.leanModal.min.js"></script>
 <script type="text/javascript" src="../assets/js/firebase.js"></script>
-<script type="text/javascript" src="../assets/js/results_collector.js"></script>
+<script type="text/javascript" src="../assets/js/results_admin.js"></script>
 
 <script type="text/javascript">
 	$(function() {
 	    $('a[rel*=leanModal]').leanModal({ top : 0, closeButton: ".modal_close" });   
 	});
+</script>
+
+<script type="text/javascript">
+	var teams = ["Finn Harps Youths", "Tory Celtic", "Stonecutters", "Barhale", "The Rebels", "F.C. Palatico", "Riverside F.C.", "Arranmore Utd", "Midland Warriors", "FC Internazionale", "Real Lypis", "Gallagher Tunnellin", "St. Annes", "Damo's Dream", "Northern Tunneling", "Clannad Celtic"]
+
+	var group = ["Day 1, 11:30", "Day 1, 11:55", "Day 1, 12:20", "Day 1, 12:45", "Day 1, 13:10", "Day 1, 13:35", "Day 1, 14:00", "Day 1, 14:25", "Day 1, 14:50", "Day 1, 15:15", "Day 1, 15:40", "Day 1, 16:05", "Day 1, 16:30", "Day 1, 16:55", "Day 1, 17:20", "Day 1, 17:45", "Day 2, 11:30", "Day 2, 11:55", "Day 2, 12:20", "Day 2, 12:45", "Day 2, 13:10", "Day 2, 13:35", "Day 2, 14:00", "Day 2, 14:25"];
+
+	var quarter = ["Quarter 1", "Quarter 2", "Quarter 3", "Quarter 4"];
+
+	var semi = ["Semi 1", "Semi 2"];
+
+	var final = ["FINAL"];
+
+	$("#game_selection").change(function() {
+	    var parent = $(this).val(); 
+	    switch(parent){ 
+	        case 'group':
+	             list(group);
+	            break;
+	        case 'quarter':
+	             list(quarter);
+	            break;              
+	        case 'semi':
+	             list(semi);
+	            break;                
+	        case 'final':
+	             list(final);
+	            break;  
+	        default: //default child option is blank
+	            $("#game_times").append("<option>Select a game group</option>");
+	            break;
+	           }
+	});
+	
+	//function to populate child select box
+	function list(array_list)
+	{
+	    $("#game_times").html(""); //reset child options
+	    $(array_list).each(function (i) { //populate child options 
+	        $("#game_times").append("<option value='"+array_list[i]+"' id='"+array_list[i]+"'>"+array_list[i]+"</option>");
+	    });
+	}
 </script>
 
 </body>

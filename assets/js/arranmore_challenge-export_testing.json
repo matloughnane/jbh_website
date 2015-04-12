@@ -1,0 +1,129 @@
+{
+    "games": {
+        "group_games": {
+            "game01": {
+                "team1": "Finn Harps Youths",
+                "team1_score": "-",
+                "team2": "Tory Celtic",
+                "team2_score": "-",
+                "time": "Day 1, 11:30"
+            },
+            "game02": {
+                "team1": "Stonecutters",
+                "team1_score": "-",
+                "team2": "Barhale",
+                "team2_score": "-",
+                "time": "Day 1, 11:55"
+            },
+            "game03": {
+                "team1": "The Rebels",
+                "team1_score": "-",
+                "team2": "FC Palatico",
+                "team2_score": "-",
+                "time": "Day 1, 12:20"
+            },
+            "game04": {
+                "team1": "Riverside FC",
+                "team1_score": "-",
+                "team2": "Arranmore Utd",
+                "team2_score": "-",
+                "time": "Day 1, 12:45"
+            },
+            "game05": {
+                "team1": "Midland Warriors",
+                "team1_score": "-",
+                "team2": "FC Internazionale",
+                "team2_score": "-",
+                "time": "Day 1, 13:10"
+            },
+            "game06": {
+                "team1": "Real Lypis",
+                "team1_score": "-",
+                "team2": "Gallagher Tunnelling",
+                "team2_score": "-",
+                "time": "Day 1, 13:35"
+            }
+        },
+        "quarter_games": {
+            "game01": {
+                "team1": "Team",
+                "team1_score": "-",
+                "team2": "Team",
+                "team2_score": "-",
+                "time": "Quarter 1"
+            },
+            "game02": {
+                "team1": "Team",
+                "team1_score": "-",
+                "team2": "Team",
+                "team2_score": "-",
+                "time": "Quarter 2"
+            },
+            "game03": {
+                "team1": "Team",
+                "team1_score": "-",
+                "team2": "Team",
+                "team2_score": "-",
+                "time": "Quarter 3"
+            },
+            "game04": {
+                "team1": "Team",
+                "team1_score": "-",
+                "team2": "Team",
+                "team2_score": "-",
+                "time": "Quarter 4"
+            }
+        },
+        "semi_games": {
+            "game01": {
+                "team1": "Team",
+                "team1_score": "-",
+                "team2": "Team",
+                "team2_score": "-",
+                "time": "Semi 1"
+            },
+            "game02": {
+                "team1": "Team",
+                "team1_score": "-",
+                "team2": "Team",
+                "team2_score": "-",
+                "time": "Semi 2"
+            }
+        },
+        "final_game": {
+            "game01": {
+                "team1": "Team",
+                "team1_score": "-",
+                "team2": "Team",
+                "team2_score": "-",
+                "time": "FINAL"
+            }
+        },
+        "groups": {
+            "groupA": {
+                "Team1": "Finn Harps Youths",
+                "Team2": "Tory Celtic",
+                "Team3": "Stonecutters",
+                "Team4": "Barhale"
+            },
+            "groupB": {
+                "Team1": "The Rebels",
+                "Team2": "F.C. Palatico",
+                "Team3": "Riverside F.C.",
+                "Team4": "Arranmore Utd."
+            },
+            "groupC": {
+                "Team1": "Midland Warriors",
+                "Team2": "FC Internazionale",
+                "Team3": "Real Lypis",
+                "Team4": "Gallagher Tunnelling"
+            },
+            "groupD": {
+                "Team1": "St. Annes",
+                "Team2": "Damo's Dream",
+                "Team3": "Northern Tunneling",
+                "Team4": "Clannad Celtic"
+            }
+        }
+    }
+}

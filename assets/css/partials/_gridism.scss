@@ -62,6 +62,9 @@
 .grid .golden-small,   .grid .w-g-s { width: 38.2716%; } /* Golden section: smaller piece */
 .grid .golden-large,   .grid .w-g-l { width: 61.7283%; } /* Golden section: larger piece */
 
+// CUSTOM ML
+.grid .one-sixth,    .grid .w-1-6 { width: 16.666%; };
+
 /* Clearfix after every .grid */
 .grid {
   *zoom: 1;
