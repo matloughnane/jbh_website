@@ -44,7 +44,7 @@ nav.alt {
 			display: inline;
 			padding: 10px 20px;
 			&:hover {
-				box-shadow: 0px -5px 0px 0px $primary inset; 
+				box-shadow: 0px -5px 0px 0px $primary_dull inset; 
 			}
 			&.active {
 				box-shadow: 0px -5px 0px 0px $primary_dull inset; 
