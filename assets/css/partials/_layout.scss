@@ -78,6 +78,11 @@ h2 {
 	margin-bottom: 10px !important;
 }
 
+.card_noBottom {
+	border-radius: $border-radius;
+	box-shadow: $shadow1;
+}
+
 .padded_left_right {
 	padding-left: 10px !important;
 	padding-right: 10px !important;
