@@ -35,6 +35,19 @@ table.group {
 	}
 }
 
+@media screen and (max-width: 420px) {
+	table.group {
+		font-size: 0.9em;
+	}
+}
+@media screen and (max-width: 320px) {
+	table.group {
+		font-size: 0.7em;
+	}
+	table.game {
+		font-size: 0.8em;
+	}
+}
 
 table.game {
 	th {
