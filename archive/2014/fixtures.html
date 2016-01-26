@@ -7,14 +7,8 @@
 <!-- css and formatting -->
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
     <link rel="stylesheet" type="text/css" href="assets/css/gridism.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/tables.css">
     <link rel="stylesheet" type="text/css" href="assets/css/arranmore_font.css">
-<!--     <link rel="stylesheet" type="text/css" href="assets/css/#.css"> -->
-
-<!--      <script src="#"></script> -->
-<!--     // <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
-<!--     // <script src="assets/js/jquery-1.10.2.min.js"></script>
-    // <script src="assets/js/bigSlide.min.js"></script>
-    // <script src="assets/js/jquery.csvToTable.js"></script> -->
 
     <script src="assets/js/output.min.js"></script>
     <script src="assets/modal/jquery.leanModal.min.js"></script>
@@ -26,17 +20,6 @@
   <link rel="apple-touch-icon-precomposed" sizes="512x512" href="assets/img/favicon/square_pngs_512.png">
   <link rel="apple-touch-icon-precomposed" href="assets/img/favicon/square_pngs_512.png">
   <link rel="shortcut icon" href="2013_archive/assets/ico/favicon.png">
-
-    <!-- TABLE SCRIPT -->
-      <script>
-        $(function() {
-          $('#groups_table').CSVToTable('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dG01c2dxN0NxUmJ3N0dFQ245aE4tM2c&output=csv', { loadingImage: 'assets/img/loading.gif', startLine: 0 });
-          $('#groups_stages_table').CSVToTable('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dGExeTR4RUZpU2Z2YzMyVDBDUXBKZmc&output=csv', { loadingImage: 'assets/img/loading.gif', startLine: 0 });
-          $('#quarters_table').CSVToTable('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dDE1R1FLTVJTeE51b000SEk3d2xpWHc&output=csv', { loadingImage: 'assets/img/loading.gif', startLine: 0 });
-          $('#semis_table').CSVToTable('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dFl6NjJWbmhtWGFYUjEyN2V5VWZYQ1E&output=csv', { loadingImage: 'assets/img/loading.gif', startLine: 0 });
-          $('#finals_table').CSVToTable('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dERBRjVmOXlwcnNuVzVjbHlBU3c0OFE&output=csv', { loadingImage: 'assets/img/loading.gif', startLine: 0 });
-          });
-      </script>
 
 <!-- GOOGLE META DATA -->
     <meta itemprop="name" content="Arranmore Cup Challenge">
@@ -58,7 +41,7 @@
     <div class="wrap wider">
       <div class="grid">
         <a href="#menu" class="menu-link pull-left hide-until-mobiles"><span><i class="icon-menu"></i></span></a>        <div class="unit whole align-center">
-          <a href="http://arranmorechallenge.com/"><img class="logo" src="http://arranmorechallenge.com/assets/img/logo_shadow.png"></a>
+          <a href="http://arranmorechallenge.com/"><img class="logo" src="assets/img/ac_logo-04.png"></a>
         </div>
       </div>
     </div>
@@ -66,22 +49,22 @@
 <div class="wrap grid whole">
     <nav id="menu" class="panel" role="navigation">
           <ul>
-              <li><a class="nav_link" href="index.html">Home</a></li>
-              <li><a class="nav_link" href="about.html">About</a></li>
-              <li><a class="nav_link" href="fixtures.html">Fixtures</a></li>
-              <li><a class="nav_link" href="live.html">Live</a></li>
-              <li><a class="nav_link" href="photos.html">Photos</a></li>
+            <li><a href="/"  class="active">Home</a></li>
+            <li><a href="/about" >About</a></li>
+            <li><a href="/fixtures" >Fixtures</a></li>
+            <li><a href="/live" >Live</a></li>
+            <li><a href="/photos" >Photos</a></li>
           </ul>
     </nav>
     <div class="full_bar">
 <!--       <div class="hide-until-mobiles align-center content_secondary">Arranmore Challenge</div> -->
           <div class="nav hide-on-mobiles">
             <ul>
-                <li><a class="nav_link" href="index.html">Home</a></li>
-                <li><a class="nav_link" href="about.html">About</a></li>
-                <li><a class="nav_link" href="fixtures.html">Fixtures</a></li>
-                <li><a class="nav_link" href="live.html">Live</a></li>
-                <li><a class="nav_link" href="photos.html">Photos</a></li>
+              <li><a href="/"  class="active">Home</a></li>
+              <li><a href="/about" >About</a></li>
+              <li><a href="/fixtures" >Fixtures</a></li>
+              <li><a href="/live" >Live</a></li>
+              <li><a href="/photos" >Photos</a></li>
             </ul>
           </div>
       </div>
@@ -96,28 +79,133 @@
       <a href="#quarters">Quarter Finals</a> <br>
       <a href="#semis">Semi Finals</a> <br>
       <a href="#final">The Final</a> <br>
+      <a href="http://arranmorechallenge.com/archive/2015/pages/fixtures.html" class="">2015 Fixtures</a><br>
+      <a href="http://arranmorechallenge.com/archive/2014/fixtures.html" class="">2014 Fixtures</a>
     </div>
     <div class="no-gutters-mobile unit four-fifths content">
-      <p class="indent">Here's the groups for the weekend:</p>
-      <div id="groups_table">
+  
+    <!-- TABLES -->
+
+      <h2>Groups</h2>
+      <div id="group_table">
+         <table class="group">
+            <thead>
+               <tr>
+                  <th>Group A</th>
+                  <th>Group B</th>
+                  <th>Group C</th>
+                  <th>Group D</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>Real Lypis</td>
+                  <td>St Annes United</td>
+                  <td>Midland Warriors</td>
+                  <td>Finn Harps Youths</td>
+               </tr>
+               <tr></tr>
+               <tr>
+                  <td>Tory Celtic</td>
+                  <td>Gallagher Tunnelling</td>
+                  <td>F.C. Palatico</td>
+                  <td>Stonecutters</td>
+               </tr>
+               <tr></tr>
+               <tr>
+                  <td>Glasgow Gaels</td>
+                  <td>Arranmore</td>
+                  <td>Clannad Celtic</td>
+                  <td>Barhale</td>
+               </tr>
+               <tr></tr>
+               <tr>
+                  <td>Ballaly</td>
+                  <td>The Rebels</td>
+                  <td>F.C. Internazionale</td>
+                  <td>Damo's Dream</td>
+               </tr>
+               <tr></tr>
+            </tbody>
+         </table>
       </div>
-      <br>
-      <p class="indent">Here's all the results from the games:</p>
-      <div id="groups_stages_table">
+      <h2>Group Games</h2>
+      <div id="group_games_table">
+        <table class="game">
+          <tr class=""><th colspan="5">Group Stages</th></tr>
+         <tr><td>31/05 11:30</td><td>Real Lypis</td><td>1</td><td>0</td><td>Tory Celtic</td></tr>
+         <tr><td>31/05 11:55</td><td>Glasgow Gaels</td><td>0</td><td>6</td><td>Balally Celtic</td></tr>
+         <tr><td>31/05 12:20</td><td>St Annes United</td><td>0</td><td>4</td><td>Gallagher Tunnelling</td></tr>
+         <tr><td>31/05 12:45</td><td>Arranmore Utd</td><td>0</td><td>0</td><td>The Rebels</td></tr>
+         <tr><td>31/05 13:10</td><td>Midland Warrior</td><td>1</td><td>0</td><td>FC Palatico</td></tr>
+         <tr><td>31/05 13:35</td><td>Clannad Celtic</td><td>WON</td><td>-</td><td>FC Internazionale</td></tr>
+         <tr><td>31/05 14:00</td><td>Finn Harps Youths (Woodcarvers)</td><td>WON</td><td>-</td><td>Barhale</td></tr>
+         <tr><td>31/05 14:25</td><td>Damo's Dream</td><td>-</td><td>WON</td><td>Stonecutters</td></tr>
+         <tr><td>31/05 14:50</td><td>Real Lypis</td><td>4</td><td>0</td><td>Glasgow Gaels</td></tr>
+         <tr><td>31/05 15:15</td><td>Tory Celtic</td><td>1</td><td>1</td><td>Balally Celtic</td></tr>
+         <tr><td>31/05 15:40</td><td>St Annes United</td><td>0</td><td>1</td><td>Arranmore United</td></tr>
+         <tr><td>31/05 16:05</td><td>Gallagher Tunnelling</td><td>1</td><td>0</td><td>The Rebels</td></tr>
+         <tr><td>31/05 16:30</td><td>Midland Warriors</td><td>3</td><td>2</td><td>Clannad Celtic</td></tr>
+         <tr><td>31/05 16:55</td><td>FC Palatico</td><td>1</td><td>1</td><td>FC Internazionale</td></tr>
+         <tr><td>31/05 17:20</td><td>Finn Harps Youths (Woodcarvers)</td><td>3</td><td>1</td><td>Damo's Dream</td></tr>
+         <tr><td>31/05 17:45</td><td>Barhale</td><td>1</td><td>4</td><td>Stonecutters</td></tr>
+         <tr><td>01/06 11:30</td><td>Real Lypis</td><td>1</td><td>0</td><td>Balally Celtic</td></tr>
+         <tr><td>01/06 11:55</td><td>Tory Celtic</td><td>7</td><td>0</td><td>Glasgow Gaels</td></tr>
+         <tr><td>01/06 12:20</td><td>St Annes United</td><td>1</td><td>3</td><td>The Rebels</td></tr>
+         <tr><td>01/06 12:45</td><td>Gallagher Tunnelling</td><td>1</td><td>0</td><td>Arranmore United</td></tr>
+         <tr><td>01/06 13:10</td><td>Midland Warriors</td><td>2</td><td>2</td><td>FC Internazionale</td></tr>
+         <tr><td>01/06 13:35</td><td>FC Palatico</td><td>1</td><td>3</td><td>Clannad Celtic</td></tr>
+         <tr><td>01/06 14:00</td><td>Finn Harps Youths (Woodcarvers)</td><td>1</td><td>2</td><td>Stonecutters</td></tr>
+         <tr><td>01/06 14:25</td><td>Barhale</td><td>3</td><td>1</td><td>Damo's Dream</td></tr>
+        </table>
+          
       </div>
-      <br><br>
+      <h2>Quarters</h2>
       <a id="quarters"></a>
       <div id="quarters_table">
+
+        <table class="game">
+          <tr class=""><th colspan="5">Quarter Finals</th></tr>
+          <tr><td>QTR 1</td><td>Real Lypis</td><td>1 (p.3)</td><td>1 (p.2)</td><td>Clannad Celtic</td></tr>
+          <tr><td>QTR 2</td><td>Midland Warriors</td><td>0</td><td>3</td><td>Balally</td></tr>
+          <tr><td>QTR 3</td><td>Stonecutters</td><td>1 (p.3)</td><td>1 (p.2)</td><td>The Rebels</td></tr>
+          <tr><td>QTR 4</td><td>Finn Harps (Woodcarvers)</td><td>2 (p.2)</td><td>2 (p. 2)</td><td>Gallagher's Tunneling</td></tr>
+        </table>
+
       </div>
-      <br><br>
+      <h2>Semis</h2>
       <a id="semis"></a>
       <div id="semis_table">
-      </div>
-      <br><br>
-      <a id="final"></a>
-      <div id="finals_table">
+
+        <table class="game">
+          <tr class=""><th colspan="5">Semi Finals</th></tr>
+          <tr><td>SEMI1</td><td>Real Lypis</td><td>1</td><td>0</td><td>The Rebels</td></tr>
+          <tr><td>SEMI2</td><td>Balally</td><td>0</td><td>3</td><td>Finn Harps (Woodcarvers)</td></tr>
+        </table>
+
       </div>
       <br>
+      <h2>Finals</h2>
+      <a id="final"></a>
+      <div id="final_table">
+         <table class="game">
+            <thead>
+               <tr>
+                  <th colspan="5">THE FINAL</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>FINAL</td>
+                  <td>Finn Harps</td>
+                  <td>0, p.3</td>
+                  <td>0 p.2</td>
+                  <td>Real Lypis</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+
   </div>
 </div> 
 

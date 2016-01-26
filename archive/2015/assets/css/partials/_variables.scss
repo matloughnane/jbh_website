@@ -1,0 +1,63 @@
+// ALL COLOURS
+// http://www.google.co.uk/design/spec/style/color.html#color-color-palette
+
+// WHITE
+$white: #FFFFFF;
+$white_transparent: rgba(255, 255, 255, 0.85);;
+$black: #000000;
+
+// primary
+$primary:  #CF000F;
+// D91E18
+// #CF000F
+// // primary 300
+// $primary_light: #FF6666;
+$primary_light: #D64541;
+$primary_light_alpha: rgba(214, 69, 65, 1);
+$primary_dull: #96281B;
+
+$primary_lightest: #f2c3c2;
+
+$secondary: #F57C00;
+$secondary_light: #FFB74D;
+$secondary_dull: #E65100;
+
+// archive COLOR - UPDATED
+$archive_color: #1E824C;
+$archive_color_accent: #26A65B;
+$archive_color_dark: #104428;
+$archive_color_light: #bde4cd;
+
+// SOCIAL
+$facebook: #3b5998;
+$twitter: #00aced;
+$gplus: #dd4b39;
+$instagram: #517fa4;
+
+// BKGs
+$bkg_body: #DADFE1;
+$bkg_light: #F5F5F5;
+$bkg_dark: #424242;
+$grey_light: #9E9E9E;
+// SEMI TRANSPARENT GREY
+$bkg_overlay: rgba(0, 0, 0, 0.3);
+
+// CARDS
+$border_radius: 2px;
+
+$shadow1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);;
+$shadow2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+// PANEL
+$panel_transition_closing: visibility 0s 0.5s;
+$panel_transition_opening: visibility 0s 0s;
+$panel_overlay_transition: background 0.3s 0.3s;
+
+$panel_width_default: 250px;
+$panel_width_large: 250px;
+$panel_width_medium: 250px;
+
+// SCREEN SIZES
+$large_screen: 1170px;
+$medium_screen: 768px;
+$small_screen: 360px;

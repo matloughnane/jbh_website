@@ -1,0 +1,249 @@
+body {
+	font-family: "Rambla", sans-serif;
+	margin: 0px;
+	font-size: 100%;
+	font-weight: 300;
+	color: $bkg_dark;
+	background: $bkg_body;
+}
+
+::selection {
+  background: $primary_lightest;
+  // color: $bkg_light;
+}
+::-moz-selection {
+  background: $primary_lightest;
+  // color: $bkg_light;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+}
+
+h1, h2, h3, {
+	-webkit-margin-before: 0.15em;
+	-webkit-margin-after: 0.15em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+h4, h5, h6 {
+	font-weight: 550;
+	-webkit-margin-before: 0.1em;
+	-webkit-margin-after: 0.1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+p {
+	font-size: 1.1em;
+	font-weight: 200;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	&.thinner {
+		font-size: 1em;
+		-webkit-margin-before: 0.5em;
+		-webkit-margin-after: 0.5em;
+		-webkit-margin-start: 0px;
+		-webkit-margin-end: 0px;
+	}
+	&.smaller {
+		font-size: 0.92em;
+	}
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.25em;
+}
+
+.bold_statement {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+// ==========================================
+// =========== CARDS ================
+// ==========================================
+
+.card {
+	border-radius: $border-radius;
+	box-shadow: $shadow1;
+	margin-bottom: 10px !important;
+}
+
+.card_noBottom {
+	border-radius: $border-radius;
+	box-shadow: $shadow1;
+}
+
+.padded_left_right {
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+}
+
+.plain {
+	background: $bkg_light;
+	color: $bkg_dark;
+}
+.primary {
+	background: $primary;
+	color: $bkg_light;
+}
+.primary_light {
+	background: $primary_light;
+	color: $bkg_light;
+}
+.primary_dull {
+	background: $primary_dull;
+	color: $bkg_light;
+}
+
+.shadow1 {
+	box-shadow: $shadow1;
+}
+
+footer {
+	background-color: $primary_light;
+	color: $bkg_light;
+	font-size: 0.75em;
+	// margin-top: 10px !important;
+	padding: 5px 0px;
+	bottom: 0px;
+	a {
+		color: $bkg_light;
+	}
+}
+
+// INDEX SPECIFIC
+
+.share {
+	a {
+		color: $primary_dull;
+		font-size: 2.5em;
+		&.external {
+			display: block;
+			margin: 5px 0;
+			font-size: 1em;
+			&:hover {
+			color: $bkg_light;
+			background-color: $primary_light;
+			}
+		}
+		i {
+			margin: 12px;
+		}
+	}
+};
+
+.share_bar {
+	margin: 16px 0px;
+};
+
+.live_share {
+	padding: 0px !important;
+	a {
+		font-size: 2em;
+	}
+};
+
+a {
+	&.facebook{
+		color: $facebook;
+		&:hover {
+			text-shadow: $shadow1;
+		}
+	}
+	&.twitter{
+		color: $twitter;
+		&:hover {
+			text-shadow: $shadow1;
+		}
+	}
+	&.instagram{
+		color: $instagram;
+		&:hover {
+			text-shadow: $shadow1;
+		}
+	}
+	&.gplus{
+		color: $gplus;
+		&:hover {
+			text-shadow: $shadow1;
+		}
+	}
+}
+
+// ABOUT SPECIFIC
+
+.anchor {
+	a {	
+		color: $white;
+		display: block;
+		font-size: 1.25em;
+		line-height: 1.25em;
+	}
+}
+
+// PHOTOS
+
+.arranmore_test {
+	text-align: center;
+	span {
+		margin: 5px;
+	}
+}
+
+// ADMIN
+.list {
+    border: 1px dotted $bkg_overlay;
+}
+
+// ==========================================
+// =========== IMAGES ================
+// ==========================================
+
+img {
+	max-width: 100%;
+	&.logo {
+		margin: 10px 0px;
+		max-width: 15em;
+	}
+}
+
+figure {
+	display: block;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	 overflow: hidden;
+}
+
+
+@media screen and (max-width: 850px) {
+	p {
+		font-size: 0.95em;
+	}
+}
+
+// ==============================================
+// ==================== MOBILE DEVICEs ==========
+// ==============================================
+
+@media screen and (max-width: 568px) {
+	.share {
+		a {
+			font-size: 2em;
+			i {
+				margin: 10px;
+			}
+		}
+	}
+}

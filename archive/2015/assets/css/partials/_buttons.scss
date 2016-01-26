@@ -1,0 +1,85 @@
+// ==========================================
+// =========== BUTTONS ================
+// ==========================================
+
+.btn {
+  border: none;
+  background: none;
+  padding: 8px 10px;
+  display: inline-block;
+  margin: 5px 2px;
+  text-decoration: none;
+  outline: none;
+  position: relative;
+  border-radius: $border_radius;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+  cursor: pointer;
+}
+
+.btn_margin {
+	margin: 2px 1px;
+}
+.btn_no_margin {
+	margin: 0px 1px !important;
+}
+
+.btn_primary {
+	background-color: $primary !important;
+	color: $bkg_light !important;
+	box-shadow: 0px -2px 0px 0px $primary_dull inset;
+	&:hover {
+		box-shadow: 0px -4px 0px 0px $primary_dull inset;
+	}
+	&:active {
+		background-color: $primary_dull !important;
+		color: $bkg_light !important;
+	}
+}
+
+.btn_primary_light {
+	background-color: $primary_light !important;
+	color: $bkg_light !important;
+	box-shadow: 0px -2px 0px 0px $primary_dull inset;
+	&:hover {
+		// box-shadow: 0px -3px 0px 0px $primary inset;
+		// color: $primary_dull !important;
+		box-shadow: 0px -4px 0px 0px $primary_dull inset;
+	}
+	&:active {
+		background-color: $primary !important;
+		color: $bkg_light !important;
+	}
+}
+
+
+.btn_archive {
+	// background-color: $archive_color !important;
+	// color: $bkg_light !important;
+	// box-shadow: 0px -2px 0px 0px $archive_color_dark inset;
+	// &:hover {
+	// 	box-shadow: 0px -4px 0px 0px $archive_color_dark inset;
+	// }
+	// &:active {
+	// 	background-color: $archive_color !important;
+	// 	color: $bkg_light !important;
+	// }
+}
+
+.btn_remove {
+	margin: 0px 0px;
+	padding: 5px 8px;
+	background-color: $primary_light !important;
+	color: $bkg_light !important;
+	box-shadow: 0px -2px 0px 0px $primary_dull inset;
+	&:hover {
+		// box-shadow: 0px -3px 0px 0px $primary inset;
+		// color: $primary_dull !important;
+		box-shadow: 0px -4px 0px 0px $primary_dull inset;
+	}
+	&:active {
+		background-color: $primary !important;
+		color: $bkg_light !important;
+	}
+}

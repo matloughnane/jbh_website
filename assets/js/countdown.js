@@ -1,4 +1,4 @@
-var grad = new Date(2015, 04, 31, 12, 0, 0, 0, 0),
+var grad = new Date(2016, 05, 04, 9, 0, 0, 0, 0),
   digit0 = $('#digit-0');
   digit1 = $('#digit-1'),
   digit2 = $('#digit-2'),

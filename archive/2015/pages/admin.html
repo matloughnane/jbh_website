@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Arranmore Challenge</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<!-- META DATA -->
+	<meta name="author" content="mat.loughnane" />
+	<meta name="description" content="The Arranmore Challenge is an annual 7-a-side football tournament held every June Bank Holiday (JBH) weekend. 16 teams compete over the 2 days for the cup and bragging rights." />
+	<meta name="keywords"  content="Arranmore, challenge, football, 7-a-side, arranmorechallenge, jbh, june bank holiday" />
+	<meta name="Resource-type" content="Document"/>
+
+	<link rel="icon" type="image/png" href="http://arranmorechallenge.com/assets/img/favicon.png">
+	<meta name="description" content="The Arranmore Challenge is an annual 7-a-side football tournament held every June Bank Holiday weekend. 16 teams compete over the 2 days for the cup and bragging rights." />
+
+	<meta name="theme-color" content="#96281b">
+
+	<!-- Schema.org markup for Google+ -->
+	<meta itemprop="name" content="Arranmore Challenge">
+	<meta itemprop="description" content="The Arranmore Challenge is an annual 7-a-side football tournament held every June Bank Holiday weekend. 16 teams compete over the 2 days for the cup and bragging rights.">
+	<meta itemprop="image" content="http://arranmorechallenge.com/assets/img/social_media.jpg">
+	<!-- Twitter Card data -->
+	<!-- TWITTER CARD - SMALL SUMMARY -->
+	<!-- <meta name="twitter:card" content="summary"> -->
+	<!-- TWITTER CARD - LARGE SUMMARY -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ArranChallenge">
+	<meta name="twitter:title" content="Arranmore Challenge">
+	<meta name="twitter:description" content="The Arranmore Challenge is an annual 7-a-side football tournament held every June Bank Holiday weekend. 16 teams compete over the 2 days for the cup and bragging rights.">
+	<meta name="twitter:creator" content="@ArranChallenge">
+	<!-- Twitter summary card with large image must be at least 280x150px -->
+	<meta name="twitter:image:src" content="http://arranmorechallenge.com/assets/img/social_media.jpg">
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="Arranmore Challenge" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="http://arranmorechallenge.com/" />
+	<meta property="og:image" content="http://arranmorechallenge.com/assets/img/social_media.jpg" />
+	<meta property="og:description" content="The Arranmore Challenge is an annual 7-a-side football tournament held every June Bank Holiday weekend. 16 teams compete over the 2 days for the cup and bragging rights." /> 
+	<meta property="og:site_name" content="Arranmore Challenge" />
+
+	<!-- LINKED SHEETS -->
+	<link href='http://fonts.googleapis.com/css?family=Rambla:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+</head>
+<body class="wrap">
+
+<header class="grid unit whole align-center">
+	<img src="../assets/img/logo_shadow.png" class="logo">
+</header>
+
+<!-- NAVIGATION -->
+<nav class="desktop grid card hide-on-mobiles">
+	<ul>
+		<a href="../index.html"><li >Home</li></a>
+		<a href="about.html"><li>About</li></a>
+		<a href="fixtures.html"><li>Fixtures</li></a>
+		<a href="live.html"><li>Live</li></a>
+		<a href="photos.html"><li>Photos</li></a>
+		<a href="#"><li class="active">Admin</li></a>
+	</ul>
+</nav>
+<!-- MOBILE NAVIGATION -->
+<nav class="hide-until-mobiles">
+	<a href="#" class="cd-btn"><i class="icon-menu"></i></a>
+	<div class="cd-panel from-left">
+	    <div class="cd-panel-container">
+			<div class="cd-panel-content">
+				<ul>
+					<a href="../index.html"><li><i class="icon-home"></i>Home</li></a>
+					<a href="about.html"><li><i class="icon-info-circled"></i>About</li></a>
+					<a href="fixtures.html"><li><i class="icon-calendar"></i>Fixtures</li></a>
+					<a href="live.html"><li><i class="icon-rss"></i>Live</li></a>
+					<a href="photos.html"><li><i class="icon-camera"></i>Photos</li></a>
+					<a href="#"><li class="active">Admin</li></a>
+				</ul>
+			</div> <!-- cd-panel-content -->
+	    </div> <!-- cd-panel-container -->
+	</div> <!-- cd-panel -->
+</nav>
+
+
+<main class="grid">
+<section class="unit w-1-5 card primary_light anchor">
+	<a href="#">Group Stages</a>
+	<a href="#quarters">Quarter Finals</a>
+	<a href="#semis">Semi Finals</a>
+	<a href="#final">The Final</a>
+</section>
+<section class="unit w-4-5 card plain">
+	<h2>Add Game</h2>
+	<form class="grid unit whole card">
+		<label>Choose a game</label>
+		<select placeholder="Pick a Game" id="game_selection">
+			<option value="group">Select a game</option>
+			<option value="group">Groups game</option>
+			<option value="quarter">Quarters game</option>
+			<option value="semi">Semi game</option>
+			<option value="final">Final game</option>
+		</select> <br>
+		<label>Time</label>
+		<select id="game_times">
+		</select> <br>
+		<label>Team 1</label>
+		<select  id="team1">
+			<option>Choose A Team</option>
+			<option>Finn Harps Youths</option>
+			<option>Tory Celtic</option>
+			<option>Stonecutters</option>
+			<option>Barhale</option>
+			<option>The Rebels</option>
+			<option>F.C. Palatico</option>
+			<option>Riverside F.C.</option>
+			<option>Arranmore Utd</option>
+			<option>Midland Warriors</option>
+			<option>FC Internazionale</option>
+			<option>Real Lypis</option>
+			<option>Gallagher Tunnelling</option>
+			<option>St. Annes</option>
+			<option>Damo's Dream</option>
+			<option>Northern Tunnelling</option>
+			<option>Clannad Celtic</option>
+		</select> <br>
+		<label>Team 1 Score</label>
+		<input type="text" id="team1_score" name="team1_score"><br>
+		<label>Team 2</label>
+		<select  id="team2">
+			<option>Choose A Team</option>
+			<option>Finn Harps Youths</option>
+			<option>Tory Celtic</option>
+			<option>Stonecutters</option>
+			<option>Barhale</option>
+			<option>The Rebels</option>
+			<option>F.C. Palatico</option>
+			<option>Riverside F.C.</option>
+			<option>Arranmore Utd</option>
+			<option>Midland Warriors</option>
+			<option>FC Internazionale</option>
+			<option>Real Lypis</option>
+			<option>Gallagher Tunnelling</option>
+			<option>St. Annes</option>
+			<option>Damo's Dream</option>
+			<option>Northern Tunnelling</option>
+			<option>Clannad Celtic</option>
+		</select> <br>
+		<label>Team 2 Score</label>
+		<input type="text" id="team2_score" name="team2_score"><br>
+		<div class="align-center">
+			<a class="btn btn_primary btn_add">Add A Game</a>
+		</div>
+	</form>
+
+	<h2>Groups</h2>
+	<div id="group_table">
+		<div class="loading align-center">
+			<img src="../assets/img/puff.svg" width="40">
+			<br>
+			<span>loading</span>
+		</div>
+	</div>
+
+	<h2>Group Games</h2>
+	<div id="group_games_list">
+		<div class="grid">
+			<div class="unit w-1-6"> GAME NUMBER </div>
+			<div class="unit w-1-6"> DATE </div>
+			<div class="unit w-1-6"> TEAM 1</div>
+			<div class="unit w-1-6"> SCORE 1</div>
+			<div class="unit w-1-6"> SCORE 2</div>
+			<div class="unit w-1-6"> TEAM 2</div>
+		</div>
+	</div>
+	<div id="group_games_table">
+		<div class="loading align-center">
+			<img src="../assets/img/puff.svg" width="40">
+			<br>
+			<span>loading</span>
+		</div>
+	</div>
+
+	<h2>Quarters</h2>
+	<a id="quarters"></a>
+
+	<div id="quarter_games_list"></div>
+	<div id="quarters_table">
+		<div class="loading align-center">
+			<img src="../assets/img/puff.svg" width="40">
+			<br>
+			<span>loading</span>
+		</div>
+	</div>
+
+	<h2>Semis</h2>
+	<a id="semis"></a>
+	<div id="semi_games_list"></div>
+	<div id="semis_table">
+		<div class="loading align-center">
+			<img src="../assets/img/puff.svg" width="40">
+			<br>
+			<span>loading</span>
+		</div>
+	</div>
+	<br>
+
+	<h2>Finals</h2>
+	<a id="final"></a>
+	<div id="final_games_list"></div>
+	<div id="final_table">
+		<div class="loading align-center">
+			<img src="../assets/img/puff.svg" width="40">
+			<br>
+			<span>loading</span>
+		</div>
+	</div>
+
+</section>
+</main>
+
+<footer class="grid align-center shadow1">
+	 <a id="go" rel="leanModal" name="signup" href="#thankyou"> Thank Yous </a>&middot; Arranmore Challenge v3.0 &middot; by mat.loughnane
+</footer>
+
+<div id="thankyou" class="wrap grid whole">
+	<button class="btn btn_no_margin btn_primary modal_close pull-right" href="#">close</button>
+	<h2>Some People I Need to Thank:</h2>
+	  <h3>Martin Gallagher</h3> 
+	    <p>Owns the official Cup challenge twitter handle<a href="https://twitter.com/ArranChallenge" target="_blank">@ArranChallenge</a></p>
+	  <h3>Rua and the Cup Challenge Committee</h3>
+	    <p>Provided all the details about the Cup Challenge and it's teams </p>
+	  <h3>Aoife Gallagher</h3>
+	    <p>For some great <a href="http://instagram.com/aoifegallagher1992" target="_blank">instagram photos</a> for the <a href="http://arranmorechallenge.com/photos.html">photo feed</a></p>
+	  <h3>Dylan O'Donnell</h3>
+	    <p>For another awesome <a href="https://instagram.com/dylan_m_o_d/" target="_blank">instagram photo</a> for the <a href="http://arranmorechallenge.com/about.html">about page</a></p>
+	  <h3>Twitter People</h3>
+	    <p>For all the people on twitter helping out</p>
+</div>
+
+<script type="text/javascript" src="../assets/js/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="../assets/js/sidepanel.js"></script>
+<script type="text/javascript" src="../assets/js/jquery.leanModal.min.js"></script>
+<script type="text/javascript" src="../assets/js/firebase.js"></script>
+<script type="text/javascript" src="../assets/js/results_admin.js"></script>
+
+<script type="text/javascript">
+	$(function() {
+	    $('a[rel*=leanModal]').leanModal({ top : 0, closeButton: ".modal_close" });   
+	});
+</script>
+
+<script type="text/javascript">
+	var teams = ["Finn Harps Youths", "Tory Celtic", "Stonecutters", "Barhale", "The Rebels", "F.C. Palatico", "Riverside F.C.", "Arranmore Utd", "Midland Warriors", "FC Internazionale", "Real Lypis", "Gallagher Tunnelling", "St. Annes", "Damo's Dream", "Northern Tunnelling", "Clannad Celtic"];
+
+	var group = ["Day 1, 11:30", "Day 1, 11:55", "Day 1, 12:20", "Day 1, 12:45", "Day 1, 13:10", "Day 1, 13:35", "Day 1, 14:00", "Day 1, 14:25", "Day 1, 14:50", "Day 1, 15:15", "Day 1, 15:40", "Day 1, 16:05", "Day 1, 16:30", "Day 1, 16:55", "Day 1, 17:20", "Day 1, 17:45", "Day 2, 11:30", "Day 2, 11:55", "Day 2, 12:20", "Day 2, 12:45", "Day 2, 13:10", "Day 2, 13:35", "Day 2, 14:00", "Day 2, 14:25"];
+
+	var quarter = ["Quarter 1", "Quarter 2", "Quarter 3", "Quarter 4"];
+
+	var semi = ["Semi 1", "Semi 2"];
+
+	var final = ["FINAL"];
+
+	$("#game_selection").change(function() {
+	    var parent = $(this).val(); 
+	    switch(parent){ 
+	        case 'group':
+	             list(group);
+	            break;
+	        case 'quarter':
+	             list(quarter);
+	            break;              
+	        case 'semi':
+	             list(semi);
+	            break;                
+	        case 'final':
+	             list(final);
+	            break;  
+	        default: //default child option is blank
+	            $("#game_times").append("<option>Select a game group</option>");
+	            break;
+	           }
+	});
+	
+	//function to populate child select box
+	function list(array_list)
+	{
+	    $("#game_times").html(""); //reset child options
+	    $(array_list).each(function (i) { //populate child options 
+	        $("#game_times").append("<option value='"+array_list[i]+"' id='"+array_list[i]+"'>"+array_list[i]+"</option>");
+	    });
+	}
+</script>
+
+</body>
+</html>

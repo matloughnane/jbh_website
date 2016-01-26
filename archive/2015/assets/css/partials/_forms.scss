@@ -1,0 +1,25 @@
+form {
+	border: 1px dotted $bkg_overlay;
+	background-color: $primary_lightest;
+	margin: 10px;
+	label {
+		display: inline-block;
+		margin: 5px 25px;
+		width: 100px;
+	};
+	input {
+		padding: 5px;
+		width: 200px;
+		&:focus{
+			outline: $primary;
+		}
+		&[type="text"]{
+			width: 100px;
+		}
+	}
+	select {
+		padding: 5px;
+		width: 150px;
+	}
+};
+
