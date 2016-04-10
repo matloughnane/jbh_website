@@ -2,9 +2,12 @@
 var firebaseRef = new Firebase("https://amber-fire-55.firebaseio.com/arranmore_challenge/");
 
 var resultsObj = {};
+var teams =[];
 
 firebaseRef.on("value", function(snapshot) {
     resultsObj = snapshot.val();
+    // SHOW TEAMS
+    getTeams(resultsObj);
     // GROUPS TABLE
     displayGroups(resultsObj);
     // GROUPS GAMES
@@ -13,6 +16,120 @@ firebaseRef.on("value", function(snapshot) {
 });
 
 
+function getTeams(object){
+	var teams = [];
+	// teams = ["Finn Harps Youths", "Tory Celtic", "Stonecutters", "Barhale", "The Rebels", "F.C. Palatico", "Riverside F.C.", "Arranmore Utd", "Midland Warriors", "FC Internazionale", "Real Lypis", "Gallagher Tunnelling", "St. Annes", "Damo's Dream", "Northern Tunnelling", "Clannad Celtic"];
+
+	for (key in object.games.groups){
+
+		if (object.games.groups[key].Team1 == "-"){
+			// NOTHING
+		} else {
+			teams.push(object.games.groups[key].Team1);
+		}
+		if (object.games.groups[key].Team2 == "-"){
+			// NOTHING
+		} else {
+			teams.push(object.games.groups[key].Team2);
+		}
+		if (object.games.groups[key].Team3 == "-"){
+			// NOTHING
+		} else {
+			teams.push(object.games.groups[key].Team3);
+		}
+		if (object.games.groups[key].Team4 == "-"){
+			// NOTHING
+		} else {
+			teams.push(object.games.groups[key].Team4);
+		}
+	}
+
+
+	var html = "<option>Select A Team</option>";
+	for (var i = teams.length - 1; i >= 0; i--) {
+		html += "<option>"+teams[i]+"</option>"
+	}
+	// console.log(html);
+	document.getElementById("team1").innerHTML = html;
+	document.getElementById("team2").innerHTML = html;
+
+}
+
+var group = ["Day 1, 11:30", "Day 1, 11:55", "Day 1, 12:20", "Day 1, 12:45", "Day 1, 13:10", "Day 1, 13:35", "Day 1, 14:00", "Day 1, 14:25", "Day 1, 14:50", "Day 1, 15:15", "Day 1, 15:40", "Day 1, 16:05", "Day 1, 16:30", "Day 1, 16:55", "Day 1, 17:20", "Day 1, 17:45", "Day 2, 11:30", "Day 2, 11:55", "Day 2, 12:20", "Day 2, 12:45", "Day 2, 13:10", "Day 2, 13:35", "Day 2, 14:00", "Day 2, 14:25"];
+
+var quarter = ["Quarter 1", "Quarter 2", "Quarter 3", "Quarter 4"];
+
+var semi = ["Semi 1", "Semi 2"];
+
+var final = ["FINAL"];
+
+$("#game_selection").change(function() {
+    var parent = $(this).val(); 
+    switch(parent){ 
+        case 'group':
+             list(group);
+            break;
+        case 'quarter':
+             list(quarter);
+            break;              
+        case 'semi':
+             list(semi);
+            break;                
+        case 'final':
+             list(final);
+            break;  
+        default: //default child option is blank
+            $("#game_times").append("<option>Select a game group</option>");
+            break;
+	}
+});
+
+//function to populate child select box
+function list(array_list)
+{
+    $("#game_times").html(""); //reset child options
+    $(array_list).each(function (i) { //populate child options 
+        $("#game_times").append("<option value='"+array_list[i]+"' id='"+array_list[i]+"'>"+array_list[i]+"</option>");
+    });
+}
+
+
+// ADD TEAM TO DB
+$(function() { 
+    jQuery('body').on('click', 'a', function () {
+    if ( $(this).hasClass("btn_add_team") ) {
+    		var group = $('#groups').val()
+    		var teamNo = $('#teamNo').val();
+    		var teamName = $('#teamNameGroups').val();
+    		// console.log("clicked " + teamName + " " + group + " " + teamNo);
+    		validateTeam(teamName, group, teamNo);
+        }
+    });
+});
+
+
+function validateTeam(team, group, number) {
+	if (group == "Select Group") {
+		console.log("Needs Group");
+	} else if (number == "Select Team No.") {
+		console.log("Needs Number")
+	} else if (team == "") {
+		console.log("Needs Team Name");
+		team = "-";
+	} else {
+		// console.log("Push to Firebase");
+		pushToFirebaseTeam(team, group, number);
+	}
+}
+
+function pushToFirebaseTeam(team, group, number){
+	// console.log("Pushing " + team + " " + group + " " + number);
+	if (team == ""){
+		team = "-";
+	}
+	var databaseRef = firebaseRef.child("/games/groups/"+group+"/"+number+"/");
+	databaseRef.set( team );
+}
 
 // BUILD THE EDITABLE LISTS
 function displayAllLists(resultsObj){
@@ -52,7 +169,7 @@ function buildList(object, btn_ID, html_ID){
 		result += "<div class='unit w-1-6'>"+object[key].team1_score+"</div>";
 		result += "<div class='unit w-1-6'>"+object[key].team2_score+"</div>";
 		result += "<div class='unit w-1-6'>"+object[key].team2+"</div>";
-		result += "<div class='unit w-1-6' id='"+btn_ID+"'><a class='btn btn_remove' id="+key+">remove</a></div>";
+		result += "<div class='unit w-1-6' id='"+btn_ID+"'><a class='btn btn_remove' id="+key+">CLEAR</a></div>";
 		result += "</div>";
 	};
 
@@ -141,6 +258,7 @@ function displayGroups(object){
 	// console.log(teamArrays);
 	createGroupTable(groupNames, teamArrays);
 };
+
 function createGroupTable(groupName, teamArrays){
 	var result = "<table  class='group'> <thead>";
 	for (var i = 0; i < groupName.length; i++) {
@@ -400,6 +518,18 @@ function checkGameNumber(time){
 function pushToFirebase(gameGroup, gameNumber, gameTime, team1, score_1, team2, score_2){
 	var databaseRef = firebaseRef.child("/games/"+gameGroup+"/"+gameNumber+"/");
 	// console.log(databaseRef);
+	if (team1 == "Select A Team"){
+		team1 = "-";
+	}
+	if (team2 == "Select A Team"){
+		team2 = "-";
+	}
+	if (score_1 == "") {
+		score_1 = "-";
+	}
+	if (score_2 == "") {
+		score_2 = "-";
+	}
 	databaseRef.set( 
 		{
             "team1": team1,
@@ -417,13 +547,19 @@ $(function() {
     if ( $(this).hasClass("btn_remove") ) {
     		var game = $(this).attr('id');
     		var game_groups_id = $(this).parent().attr('id');
-    		console.log("clicked remove " + game + " " + game_groups_id);
+    		// console.log("clicked remove " + game + " " + game_groups_id);
     		removeFromFirebase(game, game_groups_id);
         }
     });
 });
 function removeFromFirebase(gameID, game_groups_id){
-	var databaseRef = firebaseRef.child("/games/"+game_groups_id+"/");
-	databaseRef.child(gameID).remove();
+	var databaseRef = firebaseRef.child("/games/"+game_groups_id+"/"+gameID+"/");
+	// console.log(game_groups_id + " " + gameID);
+	// databaseRef.child(gameID).remove();
+	// console.log(databaseRef);
+	databaseRef.child("team1").set("-");
+	databaseRef.child("team2").set("-");
+	databaseRef.child("team1_score").set("-");
+	databaseRef.child("team2_score").set("-");
 };
 

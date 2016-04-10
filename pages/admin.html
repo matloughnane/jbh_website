@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Arranmore Challenge</title>
+    <title>Arranmore Challenge | Admin</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
 	<!-- META DATA -->
@@ -89,6 +89,41 @@
 	<a href="#final">The Final</a>
 </section>
 <section class="unit w-4-5 card plain">
+	<h2>List Teams</h2>
+	<form class="grid unit whole card">
+		<label>Groups: </label>
+		<select id="groups">
+			<option>Select Group</option>
+			<option value="groupA">GROUP A</option>
+			<option value="groupB">GROUP B</option>
+			<option value="groupC">GROUP C</option>
+			<option value="groupD">GROUP D</option>
+		</select> <br>
+		<label>Team No: </label>
+		<select id="teamNo">
+			<option>Select Team No.</option>
+			<option value="Team1">Team 1</option>
+			<option value="Team2">Team 2</option>
+			<option value="Team3">Team 3</option>
+			<option value="Team4">Team 4</option>
+		</select> <br>
+		<label>Team Name: </label>
+		<input type="text" id="teamNameGroups" name="">
+		<!-- <br> -->
+		<div class="align-center">
+			<a class="btn btn_primary btn_add_team">Add Team</a>
+		</div>
+	</form>
+
+	<h2>Groups</h2>
+	<div id="group_table">
+		<div class="loading align-center">
+			<img src="../assets/img/puff.svg" width="40">
+			<br>
+			<span>loading</span>
+		</div>
+	</div>
+
 	<h2>Add Game</h2>
 	<form class="grid unit whole card">
 		<label>Choose a game</label>
@@ -150,15 +185,6 @@
 			<a class="btn btn_primary btn_add">Add A Game</a>
 		</div>
 	</form>
-
-	<h2>Groups</h2>
-	<div id="group_table">
-		<div class="loading align-center">
-			<img src="../assets/img/puff.svg" width="40">
-			<br>
-			<span>loading</span>
-		</div>
-	</div>
 
 	<h2>Group Games</h2>
 	<div id="group_games_list">
@@ -246,48 +272,6 @@
 	$(function() {
 	    $('a[rel*=leanModal]').leanModal({ top : 0, closeButton: ".modal_close" });   
 	});
-</script>
-
-<script type="text/javascript">
-	var teams = ["Finn Harps Youths", "Tory Celtic", "Stonecutters", "Barhale", "The Rebels", "F.C. Palatico", "Riverside F.C.", "Arranmore Utd", "Midland Warriors", "FC Internazionale", "Real Lypis", "Gallagher Tunnelling", "St. Annes", "Damo's Dream", "Northern Tunnelling", "Clannad Celtic"];
-
-	var group = ["Day 1, 11:30", "Day 1, 11:55", "Day 1, 12:20", "Day 1, 12:45", "Day 1, 13:10", "Day 1, 13:35", "Day 1, 14:00", "Day 1, 14:25", "Day 1, 14:50", "Day 1, 15:15", "Day 1, 15:40", "Day 1, 16:05", "Day 1, 16:30", "Day 1, 16:55", "Day 1, 17:20", "Day 1, 17:45", "Day 2, 11:30", "Day 2, 11:55", "Day 2, 12:20", "Day 2, 12:45", "Day 2, 13:10", "Day 2, 13:35", "Day 2, 14:00", "Day 2, 14:25"];
-
-	var quarter = ["Quarter 1", "Quarter 2", "Quarter 3", "Quarter 4"];
-
-	var semi = ["Semi 1", "Semi 2"];
-
-	var final = ["FINAL"];
-
-	$("#game_selection").change(function() {
-	    var parent = $(this).val(); 
-	    switch(parent){ 
-	        case 'group':
-	             list(group);
-	            break;
-	        case 'quarter':
-	             list(quarter);
-	            break;              
-	        case 'semi':
-	             list(semi);
-	            break;                
-	        case 'final':
-	             list(final);
-	            break;  
-	        default: //default child option is blank
-	            $("#game_times").append("<option>Select a game group</option>");
-	            break;
-	           }
-	});
-	
-	//function to populate child select box
-	function list(array_list)
-	{
-	    $("#game_times").html(""); //reset child options
-	    $(array_list).each(function (i) { //populate child options 
-	        $("#game_times").append("<option value='"+array_list[i]+"' id='"+array_list[i]+"'>"+array_list[i]+"</option>");
-	    });
-	}
 </script>
 
 </body>

@@ -28,6 +28,7 @@ nav.desktop {
 	}
 }
 
+
 nav.alt {
 	background-color: $primary_light;
 	ul {
@@ -38,10 +39,10 @@ nav.alt {
 		padding: 10px;
 		text-align: center;
 		text-transform: uppercase;
-		li {
+		a {
 			color: $white;
 		}
-		a {			
+		li {			
 			color: $white;
 			display: inline;
 			padding: 10px 20px;

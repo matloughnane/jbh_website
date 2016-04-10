@@ -1,0 +1,10 @@
+
+// 2016 COLOURS
+$primary: #156ab5;
+
+$primary_light: #197fd8;
+$primary_light_alpha: rgba(	25, 127, 216, 1);
+$primary_dull: #0d416f;
+
+$primary_lightest: #add3f5;
+
